@@ -1,0 +1,93 @@
+/* 先引入Less文件 用@import方法 */
+@import url(common.css);
+/* 第二步设body */
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F2F2F2;
+}
+/* 第三步设常变量 */
+/* 搜索栏制作 */
+.search-content {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 1.76rem;
+  background-color: #FFC001;
+}
+.search-content .classify {
+  width: 0.88rem;
+  height: 1.4rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background: url(../image/0.png) no-repeat;
+  background-size: 0.88rem 1.4rem;
+}
+.search-content .search {
+  flex: 1;
+}
+.search-content .search input {
+  width: 100%;
+  height: 1.32rem;
+  border-radius: 0.66rem;
+  border: 0;
+  margin-top: 0.24rem;
+  padding-left: 1.1rem;
+  background-color: #FFF2CC;
+  font-size: 0.5rem;
+  color: #757575;
+}
+.search-content .login {
+  width: 1.5rem;
+  height: 1.4rem;
+  margin: 0.2rem;
+  font-size: 0.5rem;
+  color: #fff;
+  line-height: 1.4rem;
+  text-align: center;
+}
+.banner {
+  width: 15rem;
+  height: 7.2rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a {
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+}
+nav a {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2.8rem;
+  text-align: center;
+}
+nav img {
+  width: 1.64rem;
+  height: 1.64rem;
+  border-radius: 50%;
+  margin: 0.2rem auto 0;
+}
+nav span {
+  font-size: 0.5rem;
+  color: #333;
+}

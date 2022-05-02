@@ -1,0 +1,44 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.header,
+.footer {
+    clear: both;
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.left,
+.main,
+.right {
+    float: left;
+    height: 150px;
+    text-align: center;
+}
+
+.left {
+    margin-left: -100%;
+    width: 220px;
+    background-color: red;
+}
+
+.main {
+    width: 100%;
+}
+
+.middle {
+    min-height: 150px;
+    margin: 0 220px;
+    background-color: yellow;
+}
+
+.right {
+    margin-left: -220px;
+    width: 220px;
+    background-color: pink;
+}

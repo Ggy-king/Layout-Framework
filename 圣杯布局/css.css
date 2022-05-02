@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.header,
+.footer {
+    overflow: hidden;
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.container {
+    padding: 0 220px;
+}
+
+.left,
+.middle,
+.right {
+    position: relative;
+    float: left;
+    min-height: 150px;
+    text-align: center;
+}
+
+.left,
+.right {
+    width: 220px;
+}
+
+.left {
+    margin-left: -220px;
+    background-color: pink;
+}
+
+.middle {
+    width: 100%;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.right {
+    margin-right: -220px;
+    background-color: green;
+}

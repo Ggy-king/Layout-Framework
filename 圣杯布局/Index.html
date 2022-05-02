@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!-- 圣杯布局是一钟三列布局 两边宽度固定，中间创建BFC实现自适应 -->
+    <!-- 原理是当子元素处于浮动状态时 设置负margin 使子元素叠盖到兄弟元素上 -->
+    <div class="header">header</div>
+    <div class="container">
+        <div class="left">left</div>
+        <div class="middle">middle</div>
+        <div class="right">right</div>
+    </div>
+    <div class="footer">footer</div>
+
+</body>
+
+</html>

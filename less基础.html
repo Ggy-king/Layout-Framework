@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+
+<body>
+    <div class="ll">
+        <div class="kk">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <p>less是一种css升级的语言 其可以做更多的操作</p>
+    <p>less变量
+        @color:pink;
+        body {
+        background-color:@color;
+        }
+        div {
+        color:@color;
+        }
+        若想同时变几个地方的共同属性 则用less变量 @加变量名加冒号加属性；
+    </p>
+    <p>less编译
+        EasyLESS可以把less文件变成css文件
+    </p>
+    <p>less嵌套
+        less语言可以嵌套书写 即在less中可以尖括号内书写尖括号
+        像伪类元素 交集 伪元素等书写有：等前加&
+    </p>
+    <p>less运算
+        提供了加减乘除
+        1 运算符左右有空格隔开
+        2 除法运算需要括号
+        3 两个数运算的单位一样则一样 不一样则结果以第一个单位为主
+        4 颜色等其他性质也可以运算 #333-#222
+    </p>
+
+</body>
+
+</html>

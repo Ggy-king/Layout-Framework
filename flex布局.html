@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* 设置主轴的方向 */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* 设置主轴上的元素排列顺序的方式 */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+
+            /* 设置子元素是否换行 */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+
+            /* 设置测轴上的子元素的排列方式 */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: stretch;这个情况子盒子不要给高度  会自动拉伸子盒子填满父盒子*/
+
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p>flex布局更好更方便 移动端兼容好但PC端兼容很差</p>
+    <p>flex布局本质是让盒子更加自由更好操作</p>
+    <p>flex布局 1 为我们父子添加其属性后 子元素的float clear vertical-align属性都将消失</p>
+    <p>flex布局 2 伸缩布局 = 伸缩盒布局 = 弹性布局 = 弹性盒布局 = flex布局</p>
+    <p>flex布局 3 原理是给我们父盒子添加属性后对其子盒子进行操作</p>
+    <p>dispaly: flxe</p> -->
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 上面的代码表示要求当前网页用IE浏览器的最高版本来进行渲染 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!-- [if lt IE 9]>
+    <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif] -->
+    <style>
+        [class^="col"] {
+
+            border: 1px solid #ccc;
+            background-color: pink;
+        }
+
+        .aa {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 注意.container该类名bootstrap网站已经规定好改类名为父盒子宽度分屏都已设好 -->
+        <!-- 还有一个 .container-fluid 流式布局适合单独做移动端 -->
+        <p>简单学一下 现在bootstrap不咋流行</p>
+        <p>bootstrap 前端开发框架</p>
+        <p>bootstrap 栅格系统</p>
+        <p>开发原理 也是利用媒体查询方法进行布局
+            超小 < 768px 100% ;小>= 768px - <= 991px 750px ;中等>= 992px - <= 1200px 970px ;大>=1200px 1170px;
+        </p>
+        <p> 响应式布局需要一个父级作为布局容器，来配合子级元素来实现变化效果，通过媒体查询设置不同宽度下不同布局</p>
+        <p>修改样式的时候添加额外类名就行 注意权重</p>
+
+
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
+        </div>
+    </div>
+
+    <p>栅格系统 它把屏幕划分等分 与rem不同的是它横竖都分 其是将页面的内容分为若干个网格 相等</p>
+    <!-- 试一试，做四个盒子 不同宽度下显示不同个数 -->
+    <!-- 1 row 必须放到container盒子内 -->
+    <!-- 2 我们实现列的划分需要添加类前缀 -->
+    <!-- 3 xs-extra small:超小; sm-small:小; md-medium:中等; lg-large:大; -->
+    <!-- 4 column 大于12,多余的列所在的元素将被作为一个整体另起一行排列 -->
+    <!-- 5 每一行默认有左右15像素的padding -->
+    <!-- 6 可以同时为一列指定多个设备的类名，以便划分不同份数 如class = "col-ma-4 col-sm-6" -->
+    <div class="container">
+        <!-- 若少一份会有空白 多份会换行显示 -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <!-- 列嵌套最好在加一个row盒子 这样可以取消父元素的padding值 而且高度自动和父级一样高 -->
+                <div class="row">
+                    <div class="col-sm-6">a</div>
+                    <div class="col-sm-6">b</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <!-- 列偏移 -offset-4 为偏移类名-->
+                <div class="row">
+                    <div class="col-sm-4">左侧</div>
+                    <div class="col-sm-4 col-sm-offset-4">右侧</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <!-- 不同屏幕下隐藏元素 -->
+                <div class="row">
+                    <div class="col-sm-3 hidden-lg">lg</div>
+                    <div class="col-sm-3 hidden-md">md</div>
+                    <div class="col-sm-3 hidden-sm">sm</div>
+                    <div class="col-sm-3 hidden-xs">xs</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <!-- 不同屏幕下显示元素 -->
+                <div class="row">
+                    <div class="col-sm-6 visible-lg">大屏显示</div>
+                    <div class="col-sm-6">b</div>
+                </div>
+            </div>
+        </div>
+        <div class="row aa">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-2">1</div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

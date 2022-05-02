@@ -1,0 +1,103 @@
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+/* 第二步设body */
+body {
+  min-width: 320px;
+  max-width: 750px;
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F2F2F2;
+}
+/* 第三步设常变量 */
+/* 搜索栏制作 */
+.search-content {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 1.17333333rem;
+  background-color: #FFC001;
+}
+.search-content .classify {
+  width: 0.58666667rem;
+  height: 0.93333333rem;
+  margin: 0.14666667rem 0.33333333rem 0.09333333rem 0.32rem;
+  background: url(../image/0.png) no-repeat;
+  background-size: 0.58666667rem 0.93333333rem;
+}
+.search-content .search {
+  flex: 1;
+}
+.search-content .search input {
+  width: 100%;
+  height: 0.88rem;
+  border-radius: 0.44rem;
+  border: 0;
+  margin-top: 0.16rem;
+  padding-left: 0.73333333rem;
+  background-color: #FFF2CC;
+  font-size: 0.33333333rem;
+  color: #757575;
+}
+.search-content .login {
+  width: 1rem;
+  height: 0.93333333rem;
+  margin: 0.13333333rem;
+  font-size: 0.33333333rem;
+  color: #fff;
+  line-height: 0.93333333rem;
+  text-align: center;
+}
+.banner {
+  width: 10rem;
+  height: 4.8rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a {
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10rem;
+}
+nav a {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1.86666667rem;
+  text-align: center;
+}
+nav img {
+  width: 1.09333333rem;
+  height: 1.09333333rem;
+  border-radius: 50%;
+  margin: 0.13333333rem auto 0;
+}
+nav span {
+  font-size: 0.33333333rem;
+  color: #333;
+}
