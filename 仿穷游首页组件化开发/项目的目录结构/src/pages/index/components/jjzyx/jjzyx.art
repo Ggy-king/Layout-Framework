@@ -1,0 +1,102 @@
+<div class="hd clearfix">
+    <h2>机酒自由行</h2>
+    <em>跟着广源走世界，看一看大千的美好，不能辜负我</em>
+    <nav>
+        <ul>
+            <li class="current"><a href="">近期好货</a></li>
+            <li><a href="">新品汇聚</a></li>
+            <li><a href="">定制游</a></li>
+            <li><a href="">国内推荐</a></li>
+            <li><a href="">优惠机票</a></li>
+            <li><a href="">热门海岛</a></li>
+            <li><a href="">热门海岛</a></li>
+            <li><a href="">热卖签证</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="bd">
+    <ul>
+        <li class="big-grid">
+            <a href="">
+                <img src="images/jjzyx1.png" alt="">
+            </a>
+            <span class="tag">机票</span>
+            <div class="info">
+                <p>
+                    [樱花季]天津直飞东京/大阪/名古屋/冲绳/札幌2-30天往返
+                </p>
+                <p>
+                    含税机票【甩尾/多团期】
+                </p>
+            </div>
+        </li>
+        <li class="pro-grid">
+            <a href="">
+                <div class="picbox">
+                    <span class="tag">跟团游</span>
+                    <img src="images/jjzyx2.png" alt="">
+                </div>
+                <div class="wordbox">
+                    北京/上海/南京/杭州直飞巴厘岛5-7天往返含税机票（赠送旅游意外险…
+                </div>
+            </a>
+        </li>
+        <li class="pro-grid">
+            <a href="">
+                <div class="picbox">
+                    <span class="tag">机票</span>
+                    <img src="images/jjzyx3.png" alt="">
+                </div>
+                <div class="wordbox">
+                    北京/上海/南京/杭州直飞巴厘岛5-7天往返含税机票（赠送旅游意外险…
+                </div>
+            </a>
+        </li>
+        <li class="pro-grid">
+            <a href="">
+                <div class="picbox">
+                    <span class="tag">机票</span>
+                    <img src="images/jjzyx4.png" alt="">
+                </div>
+                <div class="wordbox">
+                    北京/上海/南京/杭州直飞巴厘岛5-7天往返含税机票（赠送旅游意外险…
+                </div>
+            </a>
+        </li>
+        <li class="pro-grid">
+            <a href="">
+                <div class="picbox">
+                    <span class="tag">机票</span>
+                    <img src="images/jjzyx5.png" alt="">
+                </div>
+                <div class="wordbox">
+                    北京/上海/南京/杭州直飞巴厘岛5-7天往返含税机票（赠送旅游意外险…
+                </div>
+            </a>
+        </li>
+        <li class="pro-grid">
+            <a href="">
+                <div class="picbox">
+                    <span class="tag">机票</span>
+                    <img src="images/jjzyx6.png" alt="">
+                </div>
+                <div class="wordbox">
+                    北京/上海/南京/杭州直飞巴厘岛5-7天往返含税机票（赠送旅游意外险…
+                </div>
+            </a>
+        </li>
+        <li class="more-grid">
+            <a href="">
+                <p>查看更多</p>
+                <p>机酒自由行产品</p>
+                <span class="iconfont">&#xe619;</span>
+                <ul>
+                    <li>机票</li>
+                    <li>酒店</li>
+                    <li>机+酒</li>
+                    <li>游轮</li>
+                </ul>
+            </a>
+        </li>
+    </ul>
+</div>

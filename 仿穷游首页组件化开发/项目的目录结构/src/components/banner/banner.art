@@ -1,0 +1,421 @@
+<!-- 没做幻灯片 所以用了banner -->
+
+<section class="banner" id="banner">
+    <ul id="carousel_list" class="carousel_list">
+        <li>
+            <img src="images/banner1.jpg" alt="">
+        </li>
+        <li>
+            <img src="images/banner2.jpg" alt="">
+        </li>
+        <li>
+            <img src="images/banner3.jpg" alt="">
+        </li>
+        <li>
+            <img src="images/banner4.jpg" alt="">
+        </li>
+        <li>
+            <img src="images/banner5.jpg" alt="">
+        </li>
+    </ul>
+    <div class="aa">
+        <img src="./images/ggy2.jpg" alt="">
+    </div>
+    <div class="center-wrap">
+        <a href="javascript:;" id="left_btn" class="leftbtn"></a>
+        <a href="javascript:;" id="right_btn" class="rightbtn"></a>
+        <nav class="banner-nav" id="banner-nav">
+            <ul id="banner-nav-ul">
+                <li class="hot" data-t="hot">
+                    <dl>
+                        <dt>实在不知道写啥</dt>
+                        <dd>
+                            <em>北京</em>
+                            <em>上海</em>
+                            <em>广深</em>
+                            <em>西南</em>
+                            <em>国内其他</em>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="hk" data-t="hk">
+                    <dl>
+                        <dt>为了排版</dt>
+                        <dd>
+                            <em>香港</em>
+                            <em>澳门</em>
+                            <em>台湾</em>
+                            <em>国内其他</em>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="jp" data-t="jp">
+                    <dl>
+                        <dt>多编一些字</dt>
+                        <dd>
+                            <em>东京</em>
+                            <em>大阪</em>
+                            <em>冲绳</em>
+                            <em>北海道</em>
+                            <em>福冈</em>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="as" data-t="as">
+                    <dl>
+                        <dt>图片网上找的</dt>
+                        <dd>
+                            <em>泰国</em>
+                            <em>新加坡</em>
+                            <em>印尼</em>
+                            <em>马来西亚</em>
+                            <em>越南</em>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="eu" data-t="eu">
+                    <dl>
+                        <dt>各种地方</dt>
+                        <dd>
+                            <em>英国</em>
+                            <em>法国</em>
+                            <em>美国</em>
+                            <em>加拿大</em>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="au" data-t="au">
+                    <dl>
+                        <dt>留给自己看不侵权</dt>
+                        <dd>
+                            <em>澳大利亚</em>
+                            <em>新西兰</em>
+                            <em>迪拜</em>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="menus-box">
+                <div class="menu" data-t="hot">
+                    <dl>
+                        <dt>港澳台</dt>
+                        <dd>
+                            <a href="">香港</a>
+                            <a href="">澳门</a>
+                            <a href="">台北</a>
+                            <a href="">高雄</a>
+                            <a href="">香港迪士尼</a>
+                            <a href="">香港海洋公园</a>
+                            <a href="">交通接驳</a>
+                            <a href="">澳门</a>
+                            <a href="">塔新濠天地水舞间</a>
+                            <a href="">澳门豪华自助 台北101</a>
+                            <a href="">台湾美食</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>国内热门城市</dt>
+                        <dd>
+                            <a href="">三亚</a>
+                            <a href="">东北雪乡</a>
+                            <a href="">大理</a>
+                            <a href="">丽江</a>
+                            <a href="">昆明</a>
+                            <a href="">西双版纳</a>
+                            <a href="">拉萨</a>
+                            <a href="">成都</a>
+                            <a href="">重庆</a>
+                            <a href="">长白山</a>
+                            <a href="">厦门</a>
+                            <a href="">长沙</a>
+                            <a href="">桂林北京</a>
+                            <a href="">西安</a>
+                            <a href="">敦煌</a>
+                            <a href="">杭州</a>
+                            <a href="">上海</a>
+                            <a href="">无锡</a>
+                            <a href="">南京</a>
+                            <a href="">广州</a>
+                            <a href="">黄山</a>
+                            <a href="">莫干山</a>
+                            <a href="">新疆</a>
+                            <a href="">北海</a>
+                            <a href="">九华山</a>
+                            <a href="">太原</a>
+                            <a href="">张家口</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>热门景点</dt>
+                        <dd>
+                            <a href="">北京故宫</a>
+                            <a href="">东北滑雪</a>
+                            <a href="">恭王府</a>
+                            <a href="">长城</a>
+                            <a href="">青城山大熊猫基地</a>
+                            <a href="">峨眉山</a>
+                            <a href="">都江堰</a>
+                            <a href="">长恨歌表演</a>
+                            <a href="">兵马俑</a>
+                            <a href="">大唐芙蓉园</a>
+                            <a href="">三亚日游</a>
+                            <a href="">厦门鼓浪屿</a>
+                            <a href="">千岛湖</a>
+                            <a href="">呼伦贝尔草原</a>
+                            <a href="">希拉穆仁草原</a>
+                            <a href="">大理日游</a>
+                            <a href="">杭州</a>
+                            <a href="">重庆两江夜游船票</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menu" data-t="hk">
+                    <dl>
+                        <dt>港澳台</dt>
+                        <dd>
+                            <a href="#">香港</a>
+                            <a href="#">澳门</a>
+                            <a href="#">台北</a>
+                            <a href="#">高雄</a>
+                            <a href="#">香港迪士尼</a>
+                            <a href="#">香港海洋公园</a>
+                            <a href="#">交通接驳</a>
+                            <a href="#">澳门塔</a>
+                            <a href="#">新濠天地水舞间</a>
+                            <a href="#">澳门豪华自助</a>
+                            <a href="#">台北101</a>
+                            <a href="#">台湾美食</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menu" data-t="jp">
+                    <dl>
+                        <dt>日本</dt>
+                        <dd>
+                            <a href="#">东京</a>
+                            <a href="#">大阪</a>
+                            <a href="#">冲绳</a>
+                            <a href="#">北海道</a>
+                            <a href="#">札幌</a>
+                            <a href="#">京都</a>
+                            <a href="#">名古屋</a>
+                            <a href="#">福冈</a>
+                            <a href="#">长崎</a>
+                            <a href="#">鹿儿岛</a>
+                            <a href="#">JR</a>
+                            <a href="#">Pass</a>
+                            <a href="#">米其林餐厅</a>
+                            <a href="#">东京迪士尼</a>
+                            <a href="#">大阪环球影城</a>
+                            <a href="#">冲绳一日游</a>
+                            <a href="#">City</a>
+                            <a href="#">Walk</a>
+                            <a href="#">西瓜卡</a>
+                            <a href="#">京都日游</a>
+                            <a href="#">和服体验</a>
+                            <a href="#">包车服务</a>
+                            <a href="#">富士山日游</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menu" data-t="as">
+                    <dl>
+                        <dt>泰新马</dt>
+                        <dd>
+                            <a href="#">普吉岛</a>
+                            <a href="#">清迈</a>
+                            <a href="#">曼谷</a>
+                            <a href="#">苏梅岛</a>
+                            <a href="#">甲米</a>
+                            <a href="#">芭堤雅</a>
+                            <a href="#">拜县</a>
+                            <a href="#">新加坡</a>
+                            <a href="#">马来西亚</a>
+                            <a href="#">沙巴</a>
+                            <a href="#">吉隆坡</a>
+                            <a href="#">皇帝岛</a>
+                            <a href="#">泰国人妖</a>
+                            <a href="#">泰国丛林飞跃</a>
+                            <a href="#">泰国spa按摩</a>
+                            <a href="#">清迈夜间动物园</a>
+                            <a href="#">泰拳表演清莱一日游</a>
+                            <a href="#">新加坡环球影城</a>
+                            <a href="#">新加坡日游</a>
+                            <a href="#">新加坡滨海湾花园</a>
+                            <a href="#">沙巴美人鱼岛</a>
+                            <a href="#">沙巴红树林萤火虫</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>东南亚</dt>
+                        <dd>
+                            <a href="#">巴厘岛</a>
+                            <a href="#">长滩岛</a>
+                            <a href="#">马尼拉</a>
+                            <a href="#">薄荷岛</a>
+                            <a href="#">美娜多芽庄</a>
+                            <a href="#">岘港</a>
+                            <a href="#">富国岛</a>
+                            <a href="#">柬埔寨</a>
+                            <a href="#">缅甸</a>
+                            <a href="#">老挝</a>
+                            <a href="#">文莱</a>
+                            <a href="#">蓝梦岛</a>
+                            <a href="#">巴厘岛SPA</a>
+                            <a href="#">网红漂浮下午茶</a>
+                            <a href="#">珍珠岛游乐园</a>
+                            <a href="#">富国岛浮潜海钓</a>
+                            <a href="#">吴哥窟</a>
+                            <a href="#">西哈努克</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>西亚</dt>
+                        <dd>
+                            <a href="#">马尔代夫</a>
+                            <a href="#">斯里兰卡</a>
+                            <a href="#">印度</a>
+                            <a href="#">尼泊尔</a>
+                            <a href="#">格鲁吉亚阿塞拜疆</a>
+                            <a href="#">亚美尼亚</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menu" data-t="eu">
+                    <dl>
+                        <dt>欧洲</dt>
+                        <dd>
+                            <a href="#">法国</a>
+                            <a href="#">意大利</a>
+                            <a href="#">土耳其</a>
+                            <a href="#">俄罗斯</a>
+                            <a href="#">西班牙</a>
+                            <a href="#">瑞士</a>
+                            <a href="#">英国</a>
+                            <a href="#">希腊</a>
+                            <a href="#">荷兰</a>
+                            <a href="#">德国</a>
+                            <a href="#">捷克</a>
+                            <a href="#">葡萄牙</a>
+                            <a href="#">奥地利</a>
+                            <a href="#">瑞典</a>
+                            <a href="#">丹麦</a>
+                            <a href="#">挪威</a>
+                            <a href="#">冰岛</a>
+                            <a href="#">芬兰</a>
+                            <a href="#">罗瓦涅米</a>
+                            <a href="#">奥斯陆</a>
+                            <a href="#">雷克雅未克</a>
+                            <a href="#">因特拉肯</a>
+                            <a href="#">巴塞罗那</a>
+                            <a href="#">伦敦</a>
+                            <a href="#">巴黎</a>
+                            <a href="#">塞纳河</a>
+                            <a href="#">慕尼黑</a>
+                            <a href="#">普罗旺斯</a>
+                            <a href="#">温莎日游</a>
+                            <a href="#">巴黎迪斯尼</a>
+                            <a href="#">伊斯坦布</a>
+                            <a href="#">尔阿尔罕布拉宫</a>
+                            <a href="#">唐顿庄园</a>
+                            <a href="#">埃菲尔铁塔</a>
+                            <a href="#">凡尔赛宫</a>
+                            <a href="#">北欧破冰船</a>
+                            <a href="#">极光之旅</a>
+                            <a href="#">英国天空岛</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>美洲</dt>
+                        <dd>
+                            <a href="#">美国</a>
+                            <a href="#">加拿大</a>
+                            <a href="#">墨西哥</a>
+                            <a href="#">巴西</a>
+                            <a href="#">阿根廷</a>
+                            <a href="#">智利</a>
+                            <a href="#">秘鲁</a>
+                            <a href="#">玻利维亚</a>
+                            <a href="#">洛杉矶</a>
+                            <a href="#">纽约</a>
+                            <a href="#">拉斯维加斯</a>
+                            <a href="#">旧金山</a>
+                            <a href="#">圣地亚哥芝加哥</a>
+                            <a href="#">西雅图</a>
+                            <a href="#">华盛顿</a>
+                            <a href="#">奥兰多</a>
+                            <a href="#">夏威夷</a>
+                            <a href="#">塞班岛</a>
+                            <a href="#">关岛</a>
+                            <a href="#">环球影城</a>
+                            <a href="#">迪士尼</a>
+                            <a href="#">演出票</a>
+                            <a href="#">尼亚加拉大瀑布</a>
+                            <a href="#">帝国大厦</a>
+                            <a href="#">奥特莱斯</a>
+                            <a href="#">黄石国家公园</a>
+                            <a href="#">纽约大都会博物馆</a>
+                            <a href="#">美国大峡谷西峡</a>
+                            <a href="#">拉斯维加斯摩天轮</a>
+                            <a href="#">羚羊峡谷</a>
+                            <a href="#">马蹄湾</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menu" data-t="au">
+                    <dl>
+                        <dt>澳新 南太平洋</dt>
+                        <dd>
+                            <a href="#">墨尔本</a>
+                            <a href="#">悉尼</a>
+                            <a href="#">黄金海岸</a>
+                            <a href="#">凯恩斯</a>
+                            <a href="#">布里斯班奥克兰</a>
+                            <a href="#">斐济</a>
+                            <a href="#">珀斯</a>
+                            <a href="#">圣灵群岛</a>
+                            <a href="#">大堡礁</a>
+                            <a href="#">墨尔本之星</a>
+                            <a href="#">悉尼热气球</a>
+                            <a href="#">水上飞机</a>
+                            <a href="#">海港大桥</a>
+                            <a href="#">皇后镇霍比特人村</a>
+                            <a href="#">怀托莫萤火虫洞</a>
+                            <a href="#">米尔福德峡湾</a>
+                            <a href="#">新西兰滑雪</a>
+                            <a href="#">瓦纳卡</a>
+                            <a href="#"></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>中东非</dt>
+                        <dd>
+                            <a href="#">迪拜</a>
+                            <a href="#">摩洛哥</a>
+                            <a href="#">毛里求斯</a>
+                            <a href="#">埃及</a>
+                            <a href="#">塞舌尔</a>
+                            <a href="#">马达加斯加</a>
+                            <a href="#">以色列</a>
+                            <a href="#">肯尼亚</a>
+                            <a href="#">南非</a>
+                            <a href="#">伊朗</a>
+                            <a href="#">约旦</a>
+                            <a href="#">突尼斯</a>
+                            <a href="#">迪拜</a>
+                            <a href="#">塔法拉利主题公园</a>
+                            <a href="#">迪拜七星帆船酒店用餐</a>
+                            <a href="#">夜游迪拜河</a>
+                            <a href="#">亚特兰蒂斯水上乐园</a>
+                            <a href="#">动物大迁徙</a>
+                            <a href="#">撒哈拉沙漠</a>
+                            <a href="#">金字塔</a>
+                            <a href="#">纳米比亚</a>
+                            <a href="#"></a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>

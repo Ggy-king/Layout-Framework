@@ -1,0 +1,125 @@
+.site-head {
+    min-width: 1152px;
+    height: 150px;
+}
+
+.site-head .topbar {
+    min-width: 1152px;
+    height: 32px;
+    background-color: #2A2A2A;
+    color: white;
+    line-height: 32px;
+}
+
+.site-head .topbar a {
+    color: white;
+}
+
+.site-head .topbar .shortcut-links {
+    float: left;
+}
+
+.site-head .topbar .shortcut-links>ul>li {
+    float: left;
+    margin-right: 18px;
+    font-size: 14px;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu {
+    padding-right: 12px;
+    position: relative;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    transition: transform .2s ease 0s;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .arrow b {
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .arrow i {
+    position: absolute;
+    left: 4px;
+    top: 0.5px;
+    width: 6px;
+    height: 6px;
+    background-color: #2A2A2A;
+    transform: rotate(45deg);
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 9999;
+    /* 隐藏 */
+    display: none;
+    padding-top: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+    padding: 10px;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .sqmenu {
+    width: 110px;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .scmenu {
+    width: 80px;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .jdmsmenu {
+    width: 80px;
+}
+
+/* 鼠标碰到have-menu，就让menu出现 */
+.site-head .topbar .shortcut-links>ul>li.have-menu:hover .menu {
+    display: block;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .menu .menu-list li {
+    height: 20px;
+    line-height: 20px;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .menu .menu-list a {
+    font-size: 12px;
+    color: #1C1F21;
+    line-height: 20px;
+}
+
+.site-head .topbar .shortcut-links>ul>li.have-menu .menu .menu-list a:hover {
+    color: orange;
+}
+
+.site-head .topbar .topbar-r {
+    float: right;
+    width: 225px;
+}
+
+.site-head .topbar .topbar-r a,
+.site-head .topbar .topbar-r span {
+    margin-right: 11px;
+    font-size: 15px;
+}
+
+.site-head .topbar .topbar-r a:last-child {
+    margin-right: 0;
+}

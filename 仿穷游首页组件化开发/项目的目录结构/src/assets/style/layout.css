@@ -1,0 +1,209 @@
+.common-style {
+    height: 698px;
+    padding-top: 40px;
+}
+
+.common-style .hd h2 {
+    float: left;
+}
+
+.common-style .hd em {
+    float: left;
+}
+
+.content-part .hd nav {
+    float: right;
+    width: 546px;
+}
+
+.content-part .hd nav ul {
+    padding-top: 16px;
+}
+
+.content-part .hd nav ul li {
+    float: left;
+    margin-right: 16px;
+    font-size: 14px;
+}
+
+.content-part .hd nav ul li:last-child {
+    margin-right: 0;
+}
+
+.content-part .hd nav ul li a {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.content-part .hd nav ul li.current {
+    border-bottom: 4px solid #20BD9A;
+    padding-bottom: 4px;
+}
+
+.content-part .hd nav ul li.current a {
+    color: #20BD9A;
+}
+
+/* 公共的一个特效：鼠标触碰图片，能够有放大效果 */
+.content-part img {
+    transition: transform .4s ease 0s;
+}
+
+.content-part img:hover {
+    transform: scale(1.1);
+}
+
+.content-part li {
+    overflow: hidden;
+}
+
+.content-part li .picbox {
+    height: 184px;
+    overflow: hidden;
+}
+
+.content-part .grid {
+    overflow: hidden;
+}
+
+.common-style .bd {
+    padding-top: 32px;
+}
+
+.common-style .bd>ul>li {
+    float: left;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    background-color: white;
+}
+
+.common-style .bd>ul>li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20);
+}
+
+.common-style .bd>ul>li:nth-child(3),
+.common-style .bd>ul>li:nth-child(7) {
+    margin-right: 0;
+}
+
+.common-style .bd>ul>li.big-grid {
+    width: 560px;
+    height: 270px;
+    position: relative;
+}
+
+.common-style .bd>ul>li.big-grid .info {
+    position: absolute;
+    width: 560px;
+    height: 103px;
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    bottom: 0;
+    left: 0;
+    padding: 30px 26px;
+    box-sizing: border-box;
+    line-height: 26px;
+}
+
+.common-style .bd>ul>li .tag {
+    position: absolute;
+    width: 74px;
+    height: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    bottom: 103px;
+    left: 0;
+    text-align: center;
+    line-height: 40px;
+    /* 图片一触碰，就会有transform变形，那么此时会神奇的盖住tag，所以为了防止盖住，我们应该设置z-index属性值 */
+    z-index: 9999;
+}
+
+.common-style .bd>ul>li.pro-grid {
+    width: 264px;
+    height: 270px;
+}
+
+.common-style .bd>ul>li.pro-grid .picbox {
+    overflow: hidden;
+    position: relative;
+    height: 184px;
+}
+
+.common-style .bd>ul>li.pro-grid .picbox .tag {
+    bottom: 0;
+}
+
+.common-style .bd>ul>li.pro-grid .wordbox {
+    padding: 14px;
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 26px;
+}
+
+.content-part .more-grid {
+    width: 264px;
+    height: 270px;
+    background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content-part .more-grid a {
+    display: block;
+    height: 270px;
+    padding-top: 46px;
+    box-sizing: border-box;
+}
+
+.content-part .more-grid p {
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.content-part .more-grid .iconfont {
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    width: 48px;
+    height: 48px;
+    left: 50%;
+    top: 118px;
+    margin-left: -24px;
+}
+
+/* 鼠标触碰more-grid盒子之后，iconfont进行蹦跳动画 */
+.content-part .more-grid:hover .iconfont {
+    animation: ud .4s ease 0s infinite alternate;
+}
+
+@keyframes ud {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.content-part .more-grid ul {
+    margin-top: 112px;
+    padding-left: 40px;
+}
+
+.content-part .more-grid ul li {
+    color: white;
+    float: left;
+    border-right: 1px solid white;
+    padding: 0 9px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.content-part .more-grid ul li:last-child {
+    border-right: none;
+}

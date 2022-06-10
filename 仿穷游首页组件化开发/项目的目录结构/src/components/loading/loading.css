@@ -1,0 +1,14 @@
+.loading {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.loading-inline .loading-indocator,
+.loading-inline .loading-text {
+    display: inline-block;
+}
+
+.loading-inline .loading-text {
+    margin-left: 6px;
+}

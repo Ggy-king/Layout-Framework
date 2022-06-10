@@ -1,0 +1,6 @@
+<div class="loading{{inlline?'loading-inline':''}}">
+    <div class="loading-indocator">
+        <img src="./jjzyx1.png" alt="loading">
+    </div>
+    <div class="loading-text">{{text?text:'加载期......'}}</div>
+</div>

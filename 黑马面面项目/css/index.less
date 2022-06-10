@@ -1,0 +1,229 @@
+// 已将浏览器的页面划分为20份 每份应该是37.5px 因为电脑上的显示与手机上的显示比为1比2 但也会有特殊
+// 第一步先设置Body
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    width: 20rem;
+    margin: 0 auto;
+    background-color: #f2f4f7;
+}
+
+// 第二步设置浏览器的固定显示字体大小 即大于750px时显示的字体大小
+@media screen and(min-width:750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+
+}
+
+.warp {
+    background-color: #fff;
+    padding-bottom: 1.1467rem;
+}
+
+.header {
+    height: 2.1333rem;
+    border-bottom: .0267rem solid #eaeaea;
+    text-align: center;
+    line-height: 2.1333rem;
+    font-size: .9333rem;
+    color: #1c1c1c;
+
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 0 1.6rem 0;
+
+    a {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #707070;
+
+        img {
+            width: 3.7067rem;
+            height: 3.7067rem;
+        }
+
+        span {
+            font-size: .6667rem;
+        }
+
+        &:nth-child(-n + 3) {
+            margin-bottom: 1.6533rem;
+        }
+    }
+
+}
+
+.go {
+    margin: 0 .4rem;
+}
+
+// 就业
+.content {
+    padding: 1.0667rem .64rem;
+    background-color: #fff;
+    margin-top: .2667rem;
+
+    .content-hd {
+        display: flex;
+        justify-content: space-between;
+        height: 1.0133rem;
+        line-height: 1.0133rem;
+
+        h4 {
+            margin: 0;
+            font-size: .7467rem;
+            color: #333;
+
+            .icon {
+                display: inline-block;
+                width: 1.0133rem;
+                height: 1.0133rem;
+                vertical-align: bottom;
+            }
+
+
+        }
+
+        .more {
+            font-size: .5867rem;
+            color: #999;
+        }
+    }
+}
+
+.get_job_focus {
+
+    padding-top: .9067rem;
+    position: relative;
+
+    .swiper-container {
+        height: 100%;
+        width: 16rem;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: 0.5;
+
+        a {
+            width: 9.0133rem;
+            height: 10.0267rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                color: #333;
+            }
+        }
+
+        p {
+            font-size: .6667rem;
+            margin-top: .64rem;
+        }
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        z-index: 999;
+        opacity: 1;
+    }
+}
+
+.study {
+    position: relative;
+    overflow: hidden;
+
+    .study_fo {
+        padding: .2667rem;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        background-color: #fff;
+        width: 7.7333rem;
+        height: 9.0667rem;
+        border-radius: .2667rem;
+        box-shadow: 0 0rem .2667rem rgba(0, 0, 0, 0.1);
+
+
+
+        h5 {
+            font-size: .7467rem;
+            margin: 0;
+            font-weight: 400;
+            padding: .2667rem .2667rem;
+        }
+
+        p {
+            font-size: .6933rem;
+            color: #ff4400;
+            padding-left: .2667rem;
+            padding-top: .5333rem;
+        }
+    }
+
+
+}
+
+.study_con {
+    padding-bottom: 3.7333rem;
+}
+
+// 底部
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.9333rem;
+    z-index: 9999;
+    background-color: #fff;
+    display: flex;
+    padding: .5333rem;
+    border-top: .0267rem solid #ccc;
+
+    .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 1.04rem;
+            height: 1.0933rem;
+        }
+
+        p {
+            font-size: .5867rem;
+            color: #666666;
+            margin-top: .2667rem;
+        }
+
+    }
+}

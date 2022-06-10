@@ -1,0 +1,225 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .carousel_list {
+    width: 600%;
+    /* 清除浮动 */
+    overflow: hidden;
+    /* translateX中的百分数表示相对于它本身的宽度的多少倍 */
+    transform: translateX(-33.333%);
+    transition: transform .5s ease 0s;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.banner .carousel_list li {
+    float: left;
+    width: 16.666%;
+}
+
+.banner .carousel_list li img {
+    width: 100%;
+    /* height: 583px; */
+    /* 白边的处理 */
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.banner .center-wrap {
+    /* 只要有压盖，第一时间就要想到绝对定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1152px;
+    left: 50%;
+    margin-left: -576px;
+    /* 这里的100%高度绝对不能省略，因为如果省略了，它的height就是0 */
+    /* 那么它的子盒子设置16.6%就没有意义了 */
+    height: 100%;
+}
+
+.banner .center-wrap .banner-nav {
+    /* 注意，这里的100%也非常重要，因为如果省略了，它的height就是0  */
+    /* 那么它的子盒子设置16.6%就没有意义了  */
+    height: 100%;
+}
+
+.banner .center-wrap .banner-nav>ul {
+    /* 注意，这里的100%也非常重要，因为如果省略了，它的height就是0  */
+    /* 那么它的子盒子设置16.6%就没有意义了  */
+    height: 100%;
+}
+
+.banner .center-wrap .banner-nav>ul>li {
+    height: 16.66%;
+    width: 296px;
+    background-color: rgba(0, 0, 0, .53);
+    border-bottom: 1px solid #9e9e9e;
+    /* box-sizing:border-box属性的作用就是让height属性是盒子的总高度，这种情况：在盒子的高度是百分比写的，但是盒子有边框的时候 */
+    /* 此时就要让盒子的边框涵盖在height里面，就要使用box-sizing属性 */
+    box-sizing: border-box;
+}
+
+.banner .center-wrap .banner-nav>ul>li:last-child {
+    border-bottom: none;
+}
+
+.banner .center-wrap .leftbtn {
+    position: absolute;
+    width: 28px;
+    height: 44px;
+    background: url(../images/icons.png) no-repeat -21px -94px;
+    top: 50%;
+    left: -38px;
+    margin-top: -22px;
+}
+
+.banner .center-wrap .rightbtn {
+    position: absolute;
+    width: 28px;
+    height: 44px;
+    background: url(../images/icons.png) no-repeat -21px -29px;
+    top: 50%;
+    right: -38px;
+    margin-top: -22px;
+}
+
+.banner .center-wrap .leftbtn:hover,
+.banner .center-wrap .rightbtn:hover {
+    /* 透明度 */
+    opacity: 0.8;
+}
+
+.banner .center-wrap .banner-nav {
+    width: 652px;
+    height: 100%;
+    position: relative;
+}
+
+.banner .center-wrap .banner-nav>ul {
+    height: 100%;
+}
+
+.banner .center-wrap .banner-nav>ul>li {
+    position: relative;
+}
+
+.banner .center-wrap .banner-nav>ul>li dl {
+    position: absolute;
+    height: 48px;
+    top: 50%;
+    left: 42px;
+    margin-top: -24px;
+    color: white;
+}
+
+.banner .center-wrap .banner-nav>ul>li dl dt {
+    font-size: 18px;
+    line-height: 26px;
+    height: 26px;
+}
+
+.banner .center-wrap .banner-nav>ul>li dl dd {
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+}
+
+.banner .center-wrap .banner-nav>ul>li::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons.png);
+    top: 50%;
+    left: 10px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.hot::before {
+    width: 22px;
+    height: 18px;
+    background-position: -29px -399px;
+    margin-top: -9px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.hk::before {
+    width: 18px;
+    height: 21px;
+    background-position: -28px -217px;
+    margin-top: -10.5px;
+    left: 13px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.jp::before {
+    width: 24px;
+    height: 19px;
+    background-position: -25px -171px;
+    margin-top: -9.5px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.as::before {
+    width: 18px;
+    height: 19px;
+    background-position: -28px -262px;
+    margin-top: -9.5px;
+    left: 12px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.eu::before {
+    width: 20px;
+    height: 14px;
+    background-position: -29px -351px;
+    margin-top: -7px;
+    left: 11px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.au::before {
+    width: 18px;
+    height: 17px;
+    background-position: -28px -305px;
+    margin-top: -8.5px;
+    left: 12px;
+}
+
+.banner .center-wrap .banner-nav>ul>li.current {
+    background-color: rgba(0, 0, 0, .63);
+}
+
+.banner .center-wrap .banner-nav .menus-box .menu {
+    /* 让menu隐藏 */
+    display: none;
+    position: absolute;
+    left: 296px;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .63);
+    color: white;
+    padding: 16px;
+    /* 加上box-sizing属性之后，height: 100%; 就是盒子的总高度了 */
+    /* 就不需要减padding了，因为百分比怎么减padding呀？ */
+    box-sizing: border-box;
+    z-index: 99999;
+}
+
+/* 有current类名的menu是显示的 */
+.banner .center-wrap .banner-nav .menus-box .menu.current {
+    display: block;
+}
+
+.banner .center-wrap .banner-nav .menus-box .menu a {
+    color: white;
+}
+
+.banner .center-wrap .banner-nav .menus-box .menu dl {
+    margin-bottom: 16px;
+}
+
+.banner .center-wrap .banner-nav .menus-box .menu dl dt {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.banner .center-wrap .banner-nav .menus-box .menu dl dd {
+    line-height: 25px;
+    font-size: 15px;
+}
