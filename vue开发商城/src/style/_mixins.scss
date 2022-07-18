@@ -1,0 +1,7 @@
+// 封装功能
+// 多余文字省略
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
