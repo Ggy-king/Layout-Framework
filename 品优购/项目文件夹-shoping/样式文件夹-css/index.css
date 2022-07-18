@@ -1,0 +1,97 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;  
+}
+.focus li img {
+    width: 721px;
+    height: 455px;
+}
+.newsflash .news {
+    height: 165px;
+}
+.newsflash .lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 249px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 25%;
+    height: 70px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul li:nth-child(n + 9) {
+    border-bottom: 0;
+}
+.lifeservice ul li i {
+    display: block;
+    width: 24px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    background-color: pink;
+}
+.newsflash .bargain {   
+    margin-top: 5px;
+}
+.newsflash .bargain img {
+    width: 250px;
+    height: 76px;
+}
+.newsflash .news-td {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+.newsflash .news-td h5 {
+    float: left;
+    font-size: 14px;
+}
+.newsflash .news-td .more {
+    float: right;
+}
+.newsflash .news-td .more::after {
+    font-family: 'icomoon';
+    content: '\e953';
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news-bd {
+    padding: 5px 15px 0;
+    
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 强制一行显示 */
+    text-overflow: ellipsis;
+    /* 文本超出用省略号代替 */
+
+}

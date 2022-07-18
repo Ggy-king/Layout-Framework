@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+em,
+i {
+    font-family: normal;
+}
+
+li {
+    list-style: none;
+
+}
+
+img {
+    /* 为了照顾低版本浏览器 */
+    border: 0;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+button,
+input {
+    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', "\5B8B\4F53", sans-serif;
+    outline: none;
+    border: 0;
+}
+
+body {
+    background-color: #fff;
+    font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', "\5B8B\4F53", sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    /* css3抗锯齿属性 防止被放大 让字体更清晰 */
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    *zoom: 1;
+    /* 为了兼容IE6,7 */
+}

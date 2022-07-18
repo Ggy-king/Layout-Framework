@@ -1,0 +1,26 @@
+@import url(../../assets/style/base.css);
+@import url(../../assets/style/reset.css);
+@import url(../../assets/style/_viriables.scss);
+
+html {
+    height: 3.4722vw;
+}
+
+body {
+    height: 3.4722vw;
+    background: url(../../assets/images/bgcooker.jpg);
+    background-size: 100%;
+
+}
+
+
+.container {
+    height: 3.4722vw;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        height: 100%;
+    }
+}

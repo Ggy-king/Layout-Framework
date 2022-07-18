@@ -1,0 +1,7 @@
+@import url(../../assets/style/reset.css);
+@import url(../../assets/style/base.css);
+body {
+  height: 100vh;
+  background: url(../../assets/images/bgcooker.jpg) no-repeat;
+  background-size: 100% 100%;
+}

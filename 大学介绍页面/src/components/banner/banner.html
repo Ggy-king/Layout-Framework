@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="./banner.css">
+
+<!-- Swiper -->
+<div class="get_job_focus">
+    <div class="swiper-container get_job_fo">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/1.png" alt=""></a>
+                <p>欢迎来到河南师范大学</p>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/2.jpg" alt=""></a>
+                <p>欢迎来到河南师范大学</p>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/3.jpg" alt=""></a>
+                <p>欢迎来到河南师范大学</p>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/4.jpg" alt=""></a>
+                <p>欢迎来到河南师范大学</p>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/5.jpg" alt=""></a>
+                <p>欢迎来到河南师范大学</p>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/6.jpg" alt=""></a>
+                <p>欢迎来到河南师范大学</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<script src="./banner.js"></script>
+<script src="../../assets/js/flexible.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+
+<script>
+    (function () {
+        var swiper = new Swiper('.get_job_fo', {
+            // 显示个数
+            slidesPerView: 2,
+            // 每个slide之间的距离
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+    })();
+</script>

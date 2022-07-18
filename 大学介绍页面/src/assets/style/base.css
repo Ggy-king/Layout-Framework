@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+.cenTer {
+    width: 83.3333vw;
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
