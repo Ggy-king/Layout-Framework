@@ -1,0 +1,11 @@
+.app-header-logo {
+    float: left;
+    height: 45px;
+    margin-top: 10px;
+
+}
+
+.app-header-menu {
+    padding-left: 100px !important;
+    border-bottom: 1px solid #999 !important; 
+}

@@ -1,0 +1,8 @@
+.vip {
+    border-radius: 20px;
+    min-height: 100px;
+    background: #ccc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+}
