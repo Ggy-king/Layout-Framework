@@ -1,0 +1,213 @@
+/*-- 布局 start --*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/*header*/
+.header-container {
+    top: 0;
+    background-color: rgba(222, 24, 27, 0.9);
+}
+.header-container,
+.tabbar-container {
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 2.5rem;
+}
+
+/*tabbar*/
+.tabbar-container {
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(154, 141 ,141, 0.6);
+}
+
+/*main-container*/
+.main-container {
+    padding: 2.5rem 0;
+    background-color: #eee;
+}
+
+/*nav-container*/
+.nav-container {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/*-- 布局 end --*/
+
+
+/*-- 组件 start --*/
+
+/*navbar*/
+.navbar {
+    display: flex;
+    height: 100%;
+}
+.navbar-left,
+.navbar-center,
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navbar-left,
+.navbar-right {
+    width: 2.2rem;
+}
+.navbar-center {
+    flex: 1;
+}
+.navbar-left .iconfont,
+.navbar-right .iconfont {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/*searchBox*/
+.searchBox {
+    display: flex;
+    width: 100%;
+    height: 1.6rem;
+    border-radius: 0.8rem;
+    background-color: #fff;
+}
+.searchBox-prepend,
+.searchBox-input,
+.searchBox-append {
+    height: 100%;
+}
+.searchBox-prepend,
+.searchBox-append {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+}
+.searchBox-input {
+    flex: 1;
+}
+.searchBox .iconfont {
+    color: #ccc;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/*nav*/
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.8rem 0 0.4rem;
+}
+.nav-item {
+    width: 20%;
+    margin-bottom: 0.4rem;
+}
+.nav-link {
+    display: block;
+    text-align: center;
+}
+.nav-img {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0.2rem;
+}
+.nav-text {
+    display: block;
+}
+
+.tabbar,
+.tabbar-item,
+.tabbar-link {
+    height: 100%;
+}
+.tabbar {
+    display: flex;
+}
+.tabbar-item {
+    width: 25%;
+}
+.tabbar-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tabbar-link .iconfont {
+    font-size: 1.2rem;
+}
+.tabbar-item-active .tabbar-link {
+    color: #de181b;
+}
+
+/*-- 组件 end --*/
+
+
+/*-- 内容 start --*/
+
+/*recommend*/
+.recommend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recommend-item {
+    width: 49.333333%;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 0.25rem;
+}
+.recommend-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.recommend-pic {
+    width: 100%;
+    margin-bottom: 0.4rem;
+}
+.recommend-img {
+    width: 100%;
+    height: 9.25rem;
+}
+.recommend-name,
+.recommend-origPrice,
+.recommend-info {
+    padding: 0 0.25rem;
+    margin-bottom: 0.4rem;
+}
+.recommend-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.recommend-origPrice {
+    color: #ccc;
+}
+.recommend-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recommend-price {
+    color: #e61414;
+}
+.recommend-price-num {
+    font-size: 20px;
+}
+[data-dpr="2"] .recommend-price-num {
+    font-size: 40px;
+}
+[data-dpr="3"] .recommend-price-num {
+    font-size: 60px;
+}
+.recommend-count {
+    color: #999;
+}
+
+/*-- 内容 end --*/

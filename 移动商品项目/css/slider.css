@@ -1,0 +1,62 @@
+/*@import url('base.css');*/
+/*scss*/
+
+/*@import 'base.scss';*/
+
+/*css reset*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*slider*/
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 183px;
+}
+.slider-item-container,
+.slider-item,
+.slider-link,
+.slider-img {
+    width: 100%;
+    height: 100%;
+}
+.slider-item-container {
+    display: flex;
+    transition: transform 0ms;
+}
+.slider-item {
+    flex-shrink: 0;
+}
+.slider-link {
+    display: block;
+}
+.slider-indicator-container {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.slider-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.slider-indicator.slider-indicator-active {
+    background-color: #007aff;
+    opacity: 1;
+}

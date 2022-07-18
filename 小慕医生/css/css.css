@@ -1,0 +1,513 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a  {
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+input,button {
+    outline: none;
+}
+body {
+    font: normal 14px/25px Helvetica;
+}
+
+/* header {
+
+} */
+header .header-top {
+    width: 1201px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header .header-top .logo {
+    float: left;
+    padding: 27px;
+    width: 221px;
+    height: 63px;
+}
+header .header-top .logo h1 {
+    width: 221px;
+    height: 63px;
+    text-indent: -9999em;
+    background: url(../images/logo.png) no-repeat center center;
+    /* font-size: 0; */
+}
+header .header-top .logo h1 a {
+    display: block;
+    width: 240px;
+    height: 80px;
+    cursor: pointer;
+}
+header .header-top .tool {
+    float: right;
+    width: 266px;
+    height: 77px;
+    padding-top: 22px;
+}
+header .header-top .tool .r1{
+    margin-bottom: 14px;
+}
+header .header-top .tool .r1 .tel {
+    width: 32px;
+    height: 25px;
+}
+header .header-top .tool .r1 .telnumber {
+    display: inline-block;
+    width: 158px;
+    height: 26px;
+    font-size: 20px;
+    color: #00978E;
+    text-align: center;
+
+}
+header .header-top .tool .r1 .icon{
+    width: 24px;
+    height: 24px;
+}
+header .header-top .tool .r1 .chinese_icon{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+header .header-top .tool .r2 {
+    width: 210px;
+    height: 26px;
+    border: 1px solid rgba(202, 202, 202, 0.6);
+    border-radius: 4px;
+}
+header .header-top .tool .r2 input {
+    float: left;
+    width: 170px;
+    height: 26px;
+    padding-left: 20px;
+    border: none;
+}
+header .header-top .tool .r2 button{
+    float: left;
+    position: relative;
+    top: 3px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+header .main-nav {
+    width: 100%;
+    height: 60px;
+    background-color: #00978E;
+    margin-top: 20px;
+}
+header .main-nav ul {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+header .main-nav ul li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    line-height: 60px;
+}
+header .main-nav ul li.cur {
+    background-color: #015E58;
+}
+header .main-nav ul li a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    color: white;
+}
+header .main-nav ul li a:hover {
+    background-color: orange;
+}
+
+
+/* banner区域 */
+.banner {
+    width: 100%;
+    position: relative;
+
+}
+.banner .banner-img {
+    width: 100%;
+}
+.banner .center {
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -600px;
+}
+.banner .center .left-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -37px;
+    width: 57px;
+    height: 74px;
+    background: url(../images/left.png);
+    border-radius: 6px;
+}
+.banner .center .left-btn:hover {
+    background: url(../images/lefthover.png);
+}
+.banner .center .right-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -37px;
+    width: 57px;
+    height: 74px; 
+    background: url(../images/right.png);
+    background-position: 1px 0px;
+    border-radius: 6px;
+}
+.banner .center .right-btn:hover {
+    background: url(../images/righthover.png);
+    background-position: 1px 0px;
+    
+}
+.banner .center h2 {
+    position: absolute;
+    width: 504px;
+    height: 79px;
+    font-size: 60px;
+    color: #015E58;
+    font-style: normal;
+    top: 50%;
+    left: 114px;
+    margin-top: -40px;
+}
+.banner ol {
+    position: absolute;
+    width: 120px;
+    height: 12px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -60px;
+}
+.banner ol li {
+    /* ol是绝对定位的,li是浮动的 开发一般这么做 */
+    float: left;
+    width: 20px;
+    height: 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.banner ol li.cur {
+    margin-left: 0;
+    width: 30px;
+    background-color: #00978E;
+}
+
+/* 内容部分 */
+.content {
+    padding-top: 71px;
+}
+.content .useful-links {
+    width: 904px;
+    height: 151px;
+    margin: 0 auto;
+}
+.content .useful-links ul {
+    overflow: hidden;
+}
+.content .useful-links ul li {
+    float: left;
+    width: 104px;
+    margin-right: 56px;
+}
+/* .content .useful-links ul li img {
+    width: 100%;
+} */
+.content .useful-links ul li span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #333333;
+    line-height: 40px;
+}
+.content .useful-links ul li:last-of-type {
+    margin-right: 0;
+}
+
+
+/* 医院动态和医院公告区域 */
+.content .news-and-notice {
+    width: 1200px;
+    height: 376px;
+    margin: 0 auto;
+    margin-top: 56px;
+    overflow: hidden;
+}
+.content .news-and-notice .news {
+    float: left;
+    width: 877px;
+    height: 376px;
+}
+.content .news-and-notice .notice {
+    float: left;
+    width: 323px;
+    height: 376px;
+}
+.content .news-and-notice .news h3 {
+    border-left: 6px solid #00978E;
+    padding-left: 10px;
+    height: 24px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.content .news-and-notice .news .news-content .hot-news {
+    position: relative;
+    float: left;
+    width: 422px;
+    height: 328px;
+    margin-right: 20px;
+}
+.content .news-and-notice .news .news-content .hot-news .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+.content .news-and-notice .news .news-content ul {
+    float: left;
+    width: 400px;
+    height: 328px;
+}
+.content .news-and-notice .news .news-content ul li{
+    line-height: 40px;
+}
+.content .news-and-notice .news .news-content ul li a {
+    float: left;
+    color: #666666;
+}
+.content .news-and-notice .news .news-content ul li a:hover {
+    color: #00978E;
+}
+.content .news-and-notice .news .news-content ul li span {
+    float: right;
+}
+.content .news-and-notice .notice ol {
+    margin-top: 10px;
+}
+.content .news-and-notice .notice h3 {
+    height: 24px;
+    margin-bottom: 10px;
+    border-left: 6px solid #00978E;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.content .news-and-notice .notice h3:last-of-type{
+    margin-bottom: 0;
+}
+.content .news-and-notice .notice ol li {
+    overflow: hidden;
+    margin-bottom: 11px;
+
+}
+.content .news-and-notice .notice ol li span {
+    float: left;
+    width: 53px;
+    height: 57px;
+    background-color: #00978E;
+    font-size: 30px;
+    line-height: 57px;
+    color: white;
+    text-align: center;
+    margin-right: 9px;
+}
+.content .news-and-notice .notice ol li dl dt a {
+    color: #666666;
+
+}
+.content .news-and-notice .notice ol li dl dd a {
+    color: #999;
+}
+
+/* 广告 */
+.content .ad-images {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+/* 介绍 */
+.content .dep-info {
+    height: 400px;
+    background-color: #FAFAFA;
+}
+.content .dep-info .center {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 37px;
+    position: relative;
+}
+.content .dep-info .center h3 {
+    height: 24px;
+    margin-bottom: 10px;
+    border-left: 6px solid #00978E;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.content .dep-info .center .more {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    color: #999;
+}
+.content .dep-info .center .col {
+    float: left;
+    width: 265px;
+    padding-left: 35px;
+}
+.content .dep-info .center .col h4 {
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+    position: relative;
+}
+.content .dep-info .center .col h4::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 56px;
+    width: 40px;
+    height: 2px;
+    background-color: #00978E;
+
+}
+.content .dep-info .center .col h4::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 56px;
+    width: 40px;
+    height: 2px;
+    background-color: #00978E;
+
+}
+.content .dep-info .center .col li {
+    float: left;
+    width: 119px;
+    height: 34px;
+    border: 1px solid #CDCDCD;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 17px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+}
+.content .dep-info .center .col li:nth-of-type(2n) {
+    margin-right: 0%;
+}
+.content .dep-info .center .col li a {
+    color: #333;
+}
+.content .dep-info .center .col li:hover {
+    cursor: pointer;
+}
+.content .dep-info .center .col li:hover a {
+    color: #00978E;
+    font-weight: bold;
+}
+.content .exp-info {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 24px;
+    position: relative;
+}
+.content .exp-info h3 {
+    height: 24px;
+    margin-bottom: 20px;
+    border-left: 6px solid #00978E;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.content .exp-info .more {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    color: #999;
+}
+.content .exp-info ul {
+    overflow: hidden;
+    padding-top: 20px;
+}
+.content .exp-info ul li {
+    float: left;
+    width: 400px;
+    height: 240px;
+}
+.content .exp-info ul li .picbox {
+    float: left;
+    width: 152px;
+}
+.content .exp-info ul li .picbox img {
+    width: 152px;
+    height: 190px;
+}
+.content .exp-info ul li .wordbox {
+    float: left;
+    width: 220px;
+    padding-left: 10px;
+    color: #333;
+    line-height: 27px;
+}
+
+
+/* 页脚 */
+footer  {
+    height: 395px;
+    background-color: #FAFAFA;
+}
+footer .center {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 26px;
+}
+footer .center h3 {
+    font-size: 20px;
+    color: #333333;
+}
+footer .center .friend-links ul {
+    overflow: hidden;
+    padding-top: 20px;
+}
+footer .center .friend-links li {
+    float: left;
+    padding: 0 50px;
+}
+footer .center .friend-links li a {
+    font-size: 16px;
+    color: #333;
+}
+footer .center address {
+        font-style: normal;
+        padding-top: 30px;
+}
+footer .center address ul {
+    width: 730px;
+    padding-top: 20px;
+}
+footer .center address li {
+    float: left;
+    width: 237px;
+    padding-bottom: 20px;
+}
