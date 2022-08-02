@@ -1,0 +1,11 @@
+<block wx:if="{{type === 'project'}}">
+<view>这里是实战页面 下面的内容都做活动的</view>
+<view>
+    <image
+    class="activity-item"
+    wx:for="{{activities}}"
+    wx:key="item.imgUrl"
+    src="{{item.imgUrl}}"
+  />
+  </view>
+</block>

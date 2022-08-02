@@ -1,0 +1,66 @@
+<!-- block进行封装 -->
+<block wx:if="{{type === 'recommend'}}">
+<!-- swiper小程序自带 -->
+<swiper 
+class="swiper"
+previous-margin="18rpx"
+next-margin="18rpx"
+circular="{{true}}"
+autoplay="{{true}}"
+>
+  <swiper-item 
+  wx:for="{{swiperList}}"
+  wx:key="index"
+  class="swiper-item">
+  <image 
+  class="swiper-image" 
+  src="{{item.imgUrl}}"></image>
+  </swiper-item>
+ 
+</swiper>
+<!-- 推荐 -->
+<view class="project">
+<navigator url="/pages/hot/hot">
+  <view class="project-title">实战推荐</view>
+</navigator>
+  
+  <view 
+  class="project-empty"
+  hidden="{{!(searchList && searchList.length == 0)}}"
+  >无搜索结果 </view>
+  <view 
+  class="project-item"
+   wx:for="{{searchList ? searchList : courses}}"
+   wx:key="id"
+   data-id="{{item.id}}"
+   bindtap="handleCourseTap"
+   >
+    <image
+    class="project-item-pic"
+    src="{{item.imgUrl}}"
+    />
+    <view class="project-item-content">
+      <view class="project-item-title">
+      {{item.title}}
+      </view>
+      <view class="project-item-tags">
+        <view 
+        wx:if="{{item.promotion}}"
+        class="project-item-price-active">￥{{item.price}}</view>
+      <view 
+      wx:if="{{!item.promotion}}"
+      class="project-item-text">￥{{item.price}}</view>
+      <view 
+      wx:if="{{item.notice}}"
+      class="project-item-notice">{{item.notice}}</view>
+      <view class="project-item-text">{{item.level}}</view>
+      <view class="project-item-user">
+        <image class="project-item-icon" src="../../resources/user.png"/>
+        {{item.sales}}
+      </view>
+      </view>
+    </view>
+  
+  </view>
+</view>
+</block>

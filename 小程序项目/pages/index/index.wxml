@@ -1,0 +1,47 @@
+<view class="header">
+  <input 
+  type="text"
+  class="header-input"
+  placeholder="小程序小项目"
+  placeholder-class="header-input-placeholder"
+  data-id="{{item.id}}"
+  bindinput="handleInputChange"
+/>
+<icon
+type="search" 
+class="header-input-icon"
+size="13"
+wx:if="{{ showIcon }}"
+/>
+</view>
+
+<view class="navigator">
+  <view 
+  wx:for="{{tabs}}"
+  wx:key="type"
+  data-type="{{item.type}}"
+  bindtap="changeType"
+  class="navigator-item"
+  >
+    <image 
+    class="navigator-img" 
+    src="../../resources/{{item.type}}.png"
+    alt="推荐"/>
+    {{item.name}}
+    <view 
+    hidden="{{type !== item.type}}"
+    class="navigator-active navigator-active-{{item.type}}" />
+  </view>
+</view>
+
+<!-- 推荐 -->
+<include src="./recommend" />
+<!-- 路径 -->
+<include src="./path"/>
+<!-- 实战 -->
+<include src="./project" />
+<!-- 活动 -->
+<include src="./activity" />
+
+
+

@@ -1,0 +1,5 @@
+.person {
+  margin: 100rpx;
+  text-align: center;
+  color: blue;
+}

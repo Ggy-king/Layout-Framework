@@ -1,0 +1,6 @@
+/* pages/detail/detail.wxss */
+.detail {
+  margin: 100rpx;
+  text-align: center;
+  color: blue;
+}

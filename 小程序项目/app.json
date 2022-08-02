@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/hot/hot",
+    "pages/detail/detail",
+    "pages/path/path"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "学习",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "B7BBBF",
+    "selectedColor": "#2B333B",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./resources/home.png",
+        "selectedIconPath": "./resources/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "./resources/my.png",
+        "selectedIconPath": "./resources/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

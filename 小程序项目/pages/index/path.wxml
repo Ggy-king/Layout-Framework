@@ -1,0 +1,12 @@
+<block wx:if="{{type === 'path'}}">
+  <view class="path">这里是路径页面 下面的内容都做活动的</view>
+  <view>
+    <image
+    class="activity-item"
+    wx:for="{{activities}}"
+    wx:key="item.imgUrl"
+    src="{{item.imgUrl}}"
+  />
+  </view>
+</block>
+
