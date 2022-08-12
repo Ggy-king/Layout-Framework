@@ -1,0 +1,36 @@
+.title {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ce944b;
+}
+.container-result {
+    width: 1200px;
+        /* height: 1000px; */
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-left: 10px;
+        background-color: #fff;
+        background-image: url(../images/title3.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+.result-title {
+    padding-top: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-wergb(17, 21, 25)00;
+    color: #fff;
+}
+
+.result {
+    padding-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.result li {
+    padding: 10px;
+}

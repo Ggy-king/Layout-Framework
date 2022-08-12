@@ -1,0 +1,48 @@
+.title {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ce944b;
+}
+
+.explain {
+    padding-top: 20px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.img {
+    width: 600px;
+    height: 300px;
+    /* padding: 40px 0 100px 0; */
+    margin: 40px auto;
+}
+
+.con {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.con p {
+    text-indent: 2em;
+    line-height: 40px;
+    
+}
+
+.loation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    border: 1px solid #adb524;
+    background-color: #a4d0da;
+    color: #fff;
+}
+
+.loation:hover {
+    cursor: pointer;
+    background-color: #adb524;
+}

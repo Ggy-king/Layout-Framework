@@ -1,0 +1,143 @@
+.container-test {
+    position: relative;
+    overflow-y: auto;
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    background-color: #fff;
+
+}
+.title {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ce944b;
+}
+
+.p {
+    height: 800px;
+}
+
+.test-body {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.body-title {
+    padding-left: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #104597;
+    border-left: 10px solid #01847f;
+}
+
+.number {
+    position: absolute;
+    padding: 4px;
+    top: 60px;
+    right: 40px;
+    font-size: 36px;
+    color: #01847f;
+    border: 4px solid #104597;
+    border-radius: 50%;
+}
+
+.question {
+    display: block;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3f3f3f;
+}
+
+.answer {
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.answer li {
+    margin-top: 10px;
+}
+
+.answer input {
+    color: #104597;
+}
+
+.near {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #349c03;
+    background-color: #3cc1e1;
+    color: #fff;
+}
+
+.near:hover {
+    cursor: pointer;
+    background-color: #349c03;
+}
+
+.neardown {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #349c03;
+    background-color: #3cc1e1;
+    color: #fff;
+}
+
+.neardown:hover {
+    cursor: pointer;
+    background-color: #349c03;
+}
+
+.nearup {
+    position: absolute;
+    bottom: 20px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #349c03;
+    background-color: #3cc1e1;
+    color: #fff;
+}
+
+.nearup:hover {
+    cursor: pointer;
+    background-color: #349c03;
+}
+
+.finish {
+    position: absolute;
+    bottom: 20px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #349c03;
+    background-color: #3cc1e1;
+    color: #fff;
+}
+
+.finish:hover {
+    cursor: pointer;
+    background-color: #349c03;
+}
