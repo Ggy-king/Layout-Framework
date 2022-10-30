@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*
+ *Last modified: 2022-10-19
+ *Url: https://www.axui.cn
+*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  background-image: url(../images/login.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+}
+
+.login {
+  width: 900px;
+  /* background-color: #fff; */
+  /* background: linear-gradient(to bottom right, #EAD6EE, #A0F1EA); */
+  background: linear-gradient(to bottom right, #9FA5D5, #E8F5C8);
+  opacity: .85;
+
+
+}
+
+.login .cover {
+  background-image: url(../images/login-left.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.login .core {
+  padding-left: 28px;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 1.4rem 0;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+  body.ax-align-origin {
+    background-image: none;
+    display: block;
+  }
+
+  .login {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .login .cover {
+    height: 20rem;
+    border-radius: 0;
+  }
+
+  .login .core {
+    padding-left: 0;
+  }
+
+  .login form {
+    margin: 0;
+  }
+
+  .footer {
+    position: inherit;
+    color: #666666;
+  }
+
+  .footer a {
+    color: #666666;
+  }
+}
+
+.toast1 {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%,-50%);
+  padding: .2rem 1rem;
+  background: rgba(0, 55, 129,.6);
+  border-radius: 1rem;
+  font-weight: bold;
+  color: #FFF;
+}

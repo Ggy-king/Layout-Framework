@@ -1,0 +1,125 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.page {
+    position: relative;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: .6rem;
+    font-size: .3rem;
+    font-weight: 700;
+    line-height: .6rem;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.nav {
+    position: fixed;
+    top: .6rem;
+    left: 0;
+    right: 0;
+    height: .4rem;
+    font-size: .2rem;
+    color: #fff;
+    background: linear-gradient(to right, #0C7BB3, #F2BAE8);
+    z-index: 999;
+}
+
+.nav a {
+    display: inline-block;
+    height: .3rem;
+    margin: .05rem .2rem 0 0;
+    font-size: .18rem;
+    font-weight: 700;
+    color: #00779a;
+    line-height: .3rem;
+    transition: all 0.5s;
+}
+
+.nav a:hover {
+    color: #faa51b;
+}
+
+.current {
+    border-radius: .1rem;
+    padding: 0 0.04rem 0 0.04rem;
+    background-color: #edeff0;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background-color: #edeff0; */
+    background: linear-gradient(to bottom right, #c2d5e9, #4f8dcc);
+}
+
+.main {
+    position: absolute;
+    top: 1rem;
+    font-size: .2rem;
+
+}
+
+.box1 {
+    position: relative;
+    margin-top: .1rem;
+    width: 6.5rem;
+    height: 3rem;
+    padding-top: .2rem;
+    background-color: rgba(209, 236, 255, .8);
+}
+
+.box2 {
+    margin-top: .2rem;
+    padding-top: .2rem;
+    width: 6.5rem;
+    height: 3rem;
+    background-color: rgba(209, 236, 255, .8);
+}
+
+.box3 {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.2rem;
+    width: 6rem;
+    height: 6.6rem;
+    border-radius: .1rem;
+    background-color: rgba(182, 205, 236, 1);
+}
+
+.box3-title {
+    margin-top: .1rem;
+    font-size: .2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-title {
+    position: absolute;
+    top: .3rem;
+    right: .7rem;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 999;
+}

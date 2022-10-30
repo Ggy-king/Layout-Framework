@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100px;
+}
+
+
+body {
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* background-color: #0067b8; */
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-touch-callout: none;
+  /*系统默认菜单被禁用*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  -moz-user-select: none;
+  /*火狐*/
+  -ms-user-select: none;
+  /*IE10*/
+  user-select: none;
+}
+
+input {
+  /* -webkit-user-select: auto; */
+  /*webkit浏览器*/
+}
+
+textarea {
+  -webkit-user-select: auto;
+  /*webkit浏览器*/
+}
