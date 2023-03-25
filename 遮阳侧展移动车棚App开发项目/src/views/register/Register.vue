@@ -15,7 +15,7 @@
         <div class="wrapper__register-link" @click="handleLoginClick">已有账号去登陆</div>
         <Toast v-if="data.showToast" :message="data.toastMessage" />
     </div>
-    <img src="../../assets/bg-log.jpg" class="space"/>
+    <img src="../../assets/bg-log.jpg" class="space" />
 </template>
 
 <script>
@@ -58,7 +58,11 @@ export default {
 
                 if (username && password && surePassword) {
                     // localStorage.isLogin = true
-                    router.push({ name: 'Login' })
+                    changeToast('测试版本不允许注册，高广源管理员规定的')
+                    setTimeout(() => {
+                        router.push({ name: 'Login' })
+                    }, 2000);
+
                 } else {
                     changeToast('注册失败')
                 }
@@ -138,6 +142,7 @@ export default {
         color: $content-login-fontColor;
     }
 }
+
 .space {
     height: 100%;
     width: 100%;

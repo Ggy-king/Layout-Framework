@@ -2,10 +2,10 @@
     <div class="wrapper">
         <img class="wrapper__img" src="http://www.dell-lee.com/imgs/vue3/user.png" alt="头像">
         <div class="wrapper__input">
-            <input type="text" class="wrapper__input__content" placeholder="  请输入用户名" v-model="data.username" />
+            <input type="text" class="wrapper__input__content" placeholder="请输入用户名" v-model="data.username" />
         </div>
         <div class="wrapper__input">
-            <input autocomplete="new-password" type="password" class="wrapper__input__content" placeholder="  请输入密码"
+            <input autocomplete="new-password" type="password" class="wrapper__input__content" placeholder="请输入密码"
                 v-model="data.password" />
         </div>
 
@@ -16,7 +16,7 @@
         <div class="wrapper__login-link" @click="handleRegisterClick">立即注册</div>
         <Toast v-if="data.showToast" :message="data.toastMessage" />
     </div>
-    <img src="../../assets/bg-log.jpg" class="space"/>
+    <img src="../../assets/bg-log.jpg" class="space" />
 </template>
 
 <script>
@@ -25,7 +25,6 @@ import { useRouter } from 'vue-router'
 import Toast from '../../components/Toast'
 
 // 改变axios接口默认接收格式
-// axios.defaults.headers.post['Content-Type'] = 'application/json'
 
 export default {
     name: 'Login',
@@ -59,11 +58,14 @@ export default {
                     return changeToast('密码不能为空')
                 }
 
-                if (username && password) {
+                if (username == 'admin' && password == 123456) {
                     localStorage.isLogin = true
-                    router.push({ name: 'Equipment' })
+                    changeToast('登录成功')
+                    setTimeout(() => {
+                        router.push({ name: 'Equipment' })
+                    }, 1000);
                 } else {
-                    changeToast('登陆失败')
+                    changeToast('密码或账号错误，测试版本请联系高广源管理员')
                 }
             } catch (e) {
                 changeToast('请求失败')
@@ -144,6 +146,7 @@ export default {
         color: $content-login-fontColor;
     }
 }
+
 .space {
     height: 100%;
     width: 100%;
