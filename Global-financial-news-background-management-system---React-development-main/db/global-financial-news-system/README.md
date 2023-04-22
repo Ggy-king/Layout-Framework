@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### 写在前面，里面的数据都在db/db.json中，最高级的管理员的账户及密码是 ggyadmin   123456  (ggy是什么？当然就是我的名字啦)
+
 In the project directory, you can run:
 
 ### `npm start`
