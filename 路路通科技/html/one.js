@@ -12,15 +12,8 @@ option = {
         }
     },
     grid: {
-        right: '15%',
+        right: '12%',
         bottom: '10%'
-    },
-    toolbox: {
-        feature: {
-            dataView: { show: true, readOnly: false },
-            restore: { show: true },
-            saveAsImage: { show: true }
-        }
     },
     legend: {
         data: ['渗水量', '降水量']

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            height: 100%;
+            background:
+                radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .15) 30%, rgba(255, 255, 255, .3) 32%, rgba(255, 255, 255, 0) 33%) 0 0,
+                radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 11%, rgba(255, 255, 255, .3) 13%, rgba(255, 255, 255, 0) 14%) 0 0,
+                radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 17%, rgba(255, 255, 255, .43) 19%, rgba(255, 255, 255, 0) 20%) 0 110px,
+                radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 11%, rgba(255, 255, 255, .4) 13%, rgba(255, 255, 255, 0) 14%) -130px -170px,
+                radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 11%, rgba(255, 255, 255, .4) 13%, rgba(255, 255, 255, 0) 14%) 130px 370px,
+                radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 11%, rgba(255, 255, 255, .2) 13%, rgba(255, 255, 255, 0) 14%) 0 0,
+                linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+            background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+            background-color: #840b2a;
+            position: relative;
+        }
+
+        .container {
+            width: 800px;
+            background-color: #fff;
+            margin: auto;
+            margin-top: 40px;
+
+        }
+
+        .header {
+            text-align: center;
+            width: 100%;
+            height: 150px;
+            line-height: 146px;
+        }
+
+        .main {
+            text-align: center;
+            width: 100%;
+            height: 226px;
+            line-height: 226px;
+            border-top: 4px solid black;
+
+        }
+
+        .footer {
+            text-align: center;
+            height: 96px;
+            line-height: 100px;
+            border-top: 4px solid black;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        #u1 {
+            font-size: 110px;
+        }
+
+        #u2 {
+            font-size: 100px;
+        }
+
+        #u3 {
+            font-size: 45px;
+        }
+
+        .side {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            width: 200px;
+            height: 700px;
+            background-color: rgba(255, 255, 255, .5);
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-left: 5px;
+
+        }
+
+        .sideInput {
+            margin: 0 0 10px 1px;
+            width: 80%;
+            border: #006782 solid 2px;
+            text-align: left;
+            text-indent: 1px;
+            font-weight: 600;
+            color: #0b1284;
+        }
+
+        #sum {
+            position: absolute;
+            right: 40px;
+            bottom: 60px;
+            height: 40px;
+            width: 60px;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .btn {
+            width: 60px;
+            height: 25px;
+            background-color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            color: #1b90ff;
+            outline: none;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side">
+        <div>
+            整体宽度(单位px:800)
+            <input class="sideInput" type="text" id="width" value="">
+        </div>
+        <div>
+            头部字体大小(单位px:110)
+            <input class="sideInput" type="text" id="fontsize1" value="">
+        </div>
+        <div>
+            中部字体大小(单位px:100)
+            <input class="sideInput" type="text" id="fontsize2" value="">
+        </div>
+        <div>
+            尾部字体大小(单位px:45)
+            <input class="sideInput" type="text" id="fontsize3" value="">
+        </div>
+
+        <div>
+            头部字体粗细(100-900:400)
+            <input class="sideInput" type="text" id="fontweight1" value="">
+        </div>
+        <div>
+            中部字体粗细(100-900:400)
+            <input class="sideInput" type="text" id="fontweight2" value="">
+        </div>
+        <div>
+            尾部字体粗细(100-900:400)
+            <input class="sideInput" type="text" id="fontweight3" value="">
+        </div>
+
+
+        <div>
+            字体颜色(只支持黑白:#fff或#000)
+            <input class="sideInput" type="text" id="fontcolor" value="">
+        </div>
+        <div>
+            头部高度(单位px:146)
+            <input class="sideInput" type="text" id="headheight" value="">
+        </div>
+        <div>
+            中部高度(单位px:226)
+            <input class="sideInput" type="text" id="mainheight" value="">
+        </div>
+        <div>
+            底部高度(单位100)
+            <input class="sideInput" type="text" id="footerheight" value="">
+        </div>
+        <div>
+            背景颜色(只支持黑白:#fff或#000)
+            <input class="sideInput" type="text" id="bgccolor" value="">
+        </div>
+        <button class="btn" id="b1">切换3栏</button>
+        <button class="btn" id="b2">切换2栏</button>
+        <button class="btn" id="b3">切换1栏</button>
+    </div>
+
+    <div class="container" id="con">
+        <div class="header" id="header">
+            <input id="u1" type="text" placeholder="请输入">
+        </div>
+        <div class="main" id="main">
+            <input id="u2" type="text" placeholder="请输入">
+        </div>
+        <div class="footer" id="footer">
+            <input id="u3" type="text" placeholder="请输入">
+        </div>
+    </div>
+
+    <button id="sum">提交</button>
+
+    <script>
+        const width = document.getElementById("width")
+        const fontsize1 = document.getElementById("fontsize1")
+        const fontsize2 = document.getElementById("fontsize2")
+        const fontsize3 = document.getElementById("fontsize3")
+        const fontweight1 = document.getElementById("fontweight1")
+        const fontweight2 = document.getElementById("fontweight2")
+        const fontweight3 = document.getElementById("fontweight3")
+
+
+        const fontcolor = document.getElementById("fontcolor")
+        const headheight = document.getElementById("headheight")
+        const mainheight = document.getElementById("mainheight")
+        const footerheight = document.getElementById("footerheight")
+        const bgccolor = document.getElementById("bgccolor")
+
+        const u1 = document.getElementById("u1")
+        const u2 = document.getElementById("u2")
+        const u3 = document.getElementById("u3")
+
+        const header = document.getElementById("header")
+        const main = document.getElementById("main")
+        const footer = document.getElementById("footer")
+
+        const b1 = document.getElementById("b1")
+        const b2 = document.getElementById("b2")
+        const b3 = document.getElementById("b3")
+
+        const con = document.getElementById("con")
+
+        const sum = document.getElementById("sum")
+
+
+        width.onblur = function () {
+            con.style.width = `${width.value}px`
+        }
+
+        fontsize1.onblur = function () {
+            u1.style.fontSize = `${fontsize1.value}px`
+        }
+        fontsize2.onblur = function () {
+            u2.style.fontSize = `${fontsize2.value}px`
+        }
+        fontsize3.onblur = function () {
+            u3.style.fontSize = `${fontsize3.value}px`
+        }
+        fontweight1.onblur = function () {
+            u1.style.fontWeight = `${fontweight1.value}`
+        }
+        fontweight2.onblur = function () {
+            u2.style.fontWeight = `${fontweight2.value}`
+        }
+        fontweight3.onblur = function () {
+            u3.style.fontWeight = `${fontweight3.value}`
+        }
+
+
+        fontcolor.onblur = function () {
+            u1.style.color = `${fontcolor.value}`
+            u2.style.color = `${fontcolor.value}`
+            u3.style.color = `${fontcolor.value}`
+        }
+        headheight.onblur = function () {
+            header.style.height = `${headheight.value}px`
+        }
+        mainheight.onblur = function () {
+            main.style.height = `${mainheight.value}px`
+        }
+        footerheight.onblur = function () {
+            footer.style.height = `${footerheight.value}px`
+        }
+        bgccolor.onblur = function () {
+            u1.style.backgroundColor = `${bgccolor.value}`
+            u2.style.backgroundColor = `${bgccolor.value}`
+            u3.style.backgroundColor = `${bgccolor.value}`
+            if (bgccolor.value == "#000") {
+                main.style.borderTop = "4px solid #fff"
+                footer.style.borderTop = "4px solid #fff"
+            }
+            else {
+                main.style.borderTop = "4px solid #000"
+                footer.style.borderTop = "4px solid #000"
+            }
+
+        }
+
+        b1.onclick = function () {
+            header.style.display = "block"
+            main.style.display = "block"
+            footer.style.display = "block"
+        }
+        b2.onclick = function () {
+            header.style.display = "block"
+            main.style.display = "block"
+            footer.style.display = "none"
+        }
+        b3.onclick = function () {
+            header.style.display = "block"
+            main.style.display = "none"
+            footer.style.display = "none"
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
