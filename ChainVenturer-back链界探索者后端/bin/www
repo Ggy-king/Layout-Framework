@@ -1,0 +1,94 @@
+#!/usr/bin/env node
+
+/**
+ * 模块依赖关系
+ */
+
+const app = require('../app')
+const debug = require('debug')('smartback:server')
+const http = require('http')
+const { updateRatesApi } = require('../controller/DatabaseHandle')
+
+/**
+ * 从环境中获取端口并存储在Express中
+ */
+
+const port = normalizePort(process.env.PORT || '3000')
+app.set('port', port)
+
+/**
+ * 创建HTTP服务
+ */
+
+const server = http.createServer(app)
+
+/**
+ * 在提供的端口上监听所有网络接口
+ */
+
+server.listen(port)
+server.on('error', onError)
+server.on('listening', onListening)
+
+/**
+ * 将端口规范化为数字、字符串或false
+ */
+
+function normalizePort(val) {
+  const port = parseInt(val, 10)
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * HTTP服务器“错误”事件的事件侦听器
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error
+  }
+
+  const bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // 用友好的消息处理特定的监听错误
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' 需要提升权限，您没有权限')
+      process.exit(1)
+    case 'EADDRINUSE':
+      console.error(bind + ' 已被使用')
+      process.exit(1)
+    default:
+      throw error
+  }
+}
+
+/**
+ * HTTP服务器“侦听”事件的事件侦听器
+ */
+
+function onListening() {
+  const addr = server.address()
+  const bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind)
+  console.log(`正在监听${bind}`)
+  console.log('尝试连接数据库中')
+
+  // 执行一些数据库更新等操作
+  updateRatesApi()
+}
