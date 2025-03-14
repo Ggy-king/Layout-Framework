@@ -1,0 +1,86 @@
+/* 通用重置 */  
+*,  
+*::before,  
+*::after {  
+    box-sizing: border-box; /* 使得元素的padding和border包含在总宽度和高度内 */  
+}  
+  
+/* 移除默认边距和填充 */  
+body,  
+h1, h2, h3, h4, h5, h6,  
+p, figure,  
+blockquote, dl, dd,  
+ul, ol, li,  
+hr,  
+fieldset, legend,  
+pre,  
+iframe,  
+table {  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+/* 设置根字体大小和行高 */  
+html {  
+    font-size: 16px; /* 基准字体大小 */  
+    line-height: 1.5; /* 基准行高 */  
+}  
+  
+/* 继承字体样式 */  
+body {  
+    font-family:  sans-serif, Microsoft YaHei,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 跨浏览器兼容的字体栈 */  
+    color: #333; /* 文本颜色 */
+    background-color: #fff; /* 背景颜色 */  
+    -webkit-font-smoothing: antialiased; /* 抗锯齿 */  
+    -moz-osx-font-smoothing: grayscale; /* Firefox抗锯齿 */  
+}  
+  
+/* 链接样式 */  
+a {  
+    color: inherit; /* 继承父元素的文本颜色 */  
+    text-decoration: none; /* 去除下划线 */  
+}  
+  
+a:hover,  
+a:active {  
+    text-decoration: underline; /* 鼠标悬停和激活时显示下划线 */  
+}  
+  
+/* 表格样式 */  
+table {  
+    width: 100%; /* 表格宽度占满容器 */  
+    border-collapse: collapse; /* 边框合并 */  
+    border-spacing: 0; /* 边框间距 */  
+}  
+  
+th, td {  
+    text-align: left; /* 文本左对齐 */  
+    padding: 8px; /* 单元格内边距 */  
+}  
+  
+/* 列表样式 */  
+ul, ol {  
+    list-style: none; /* 去除列表符号 */  
+}  
+  
+/* 表单元素样式 */  
+input,  
+button,  
+select,  
+textarea {  
+    font: inherit; /* 继承父元素的字体样式 */  
+    color: inherit; /* 继承父元素的文本颜色 */  
+}  
+  
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* 清除浮动 */  
+.clearfix:after {  
+    content: "";  
+    display: table;  
+    clear: both;  
+}  
+  
