@@ -65,7 +65,7 @@ const handleTabClick = (tab: TabsPaneContext, event: Event) => {
 // 获取更多文章
 const handleMoreEssay = (more:string) => {
   console.log(more)
-  
+  hooks.message('对不起，暂时没有那么多的数据','warning')
 }
 
 

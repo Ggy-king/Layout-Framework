@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref,onMounted } from 'vue'
+
+
 import match1 from '@/assets/images/my/match-1.jpg'
 import match2 from '@/assets/images/my/match-2.jpg'
 import match3 from '@/assets/images/my/match-3.png'
@@ -16,8 +19,27 @@ const urlList = [
     match6
 ]
 
+// 图片相关
+const loading = ref<boolean>(true)
 
+// 通用图片加载器
+const loadImage = (src:string) => new Promise((resolve, reject) => {
+  const img = new Image()
+  img.src = src
+  img.onload = () => resolve(src)
+})
+const imageIsShow = async () => {
+    try {
+        await Promise.all(urlList.map(src => loadImage(src)))
+        loading.value = false
+    } catch (error) {
+        loading.value = true
+    }
+}
 
+onMounted(() => {
+    imageIsShow()
+})
 
 </script>
 
@@ -28,18 +50,33 @@ const urlList = [
             <div class="match-title">展示校园荣誉 | Showcasing campus honors</div>
             <div class="match-info">虽然不值一提，但还是喜欢记录一下(Although it's not worth mentioning, I still like to record it)</div>
             <div class="match-img">
-                <el-image
-                    v-for="i in urlList" 
-                    :key="i"
-                    style="width: 150px; height: 150px;margin-left: 10px;"
-                    :src="i"
-                    :zoom-rate="1.2"
-                    :max-scale="7"
-                    :min-scale="0.2"
-                    :preview-src-list="urlList"
-                    :initial-index="urlList.indexOf(i)"
-                    fit="cover"
-                />
+                <el-skeleton 
+                    style="width: 100%;height: 150px;"
+                    :loading="loading"
+                    animated
+                    :throttle="500"
+                >
+                    <template #template>
+                        <div class="match-img-skeleton">
+                            <el-skeleton-item v-for="i in 6" variant="image" style="width: 150px;height: 150px;"/>
+                        </div>
+                    </template>
+                    <template #default>
+                        <el-image
+                            v-for="i in urlList" 
+                            :key="i"
+                            style="width: 150px; height: 150px;margin-left: 10px;"
+                            :src="i"
+                            :zoom-rate="1.2"
+                            :max-scale="7"
+                            :min-scale="0.2"
+                            :preview-src-list="urlList"
+                            :initial-index="urlList.indexOf(i)"
+                            fit="cover"
+                        />
+                    </template>
+                </el-skeleton>
+                
             </div>
             <div class="match-bottom">其实好多奖，好多经历都已经不记得了，人这一生总是很匆忙</div>
         </div>
@@ -75,6 +112,11 @@ const urlList = [
     }
     &-img {
         margin-top: 40px;
+        &-skeleton {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 20px;
+        }
     }
     &-bottom {
         color: #e1e5e5;
@@ -91,11 +133,6 @@ const urlList = [
         height: 200px;
     }
 }
-
-
-
-
-
 
 
 

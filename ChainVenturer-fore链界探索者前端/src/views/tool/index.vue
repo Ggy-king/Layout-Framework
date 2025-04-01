@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { onMounted,ref } from 'vue';
+import { onMounted,ref } from 'vue'
 import MoCart from './MoCart.vue'
 
 import noData from '@/assets/images/no-data.png'
+import tool from '@/assets/images/tool.png'
 import { getToolData } from '@/api/tool'
-import hooks from '@/utils/hooks';
+import hooks from '@/utils/hooks'
 defineOptions({
     name: 'ToolView'
 })
@@ -45,7 +46,7 @@ onMounted(() => {
   <div class="tool" v-if="moShow">
     <!-- 头部图片 -->
     <header>
-        <img src="./tool-2.png" alt="">
+        <img :src="tool" alt="工具">
         <span>探&nbsp;&nbsp;索</span>
     </header>
 

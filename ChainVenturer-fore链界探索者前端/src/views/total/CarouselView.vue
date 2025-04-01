@@ -27,6 +27,13 @@ const handleToEssay = (id:string) => {
     window.open(`${url.baseUrl}/essay/${id}`)
 }
 
+// 图片加载器
+const loading = ref<boolean>(true)
+const handleImageLoad = () => {
+    loading.value = false
+}
+
+
 onMounted(() => {
   getCarouseDate()
 })
@@ -38,12 +45,26 @@ onMounted(() => {
   <div class="block text-center">
     <el-carousel height="260px" :motion-blur="true">
       <el-carousel-item v-for="i in imgPath" :key="i._id">
-        <img 
-          :src="i.imgPath" 
-          :alt="i.title" 
-          :title="i.title"
-          @click="handleToEssay(i._id)"
+        <el-skeleton 
+          style="height: 260px;"
+          :loading="loading"
+          animated
+          :throttle="1000"
         >
+          <template #template>
+              <el-skeleton-item variant="image" style="height: 100%" />
+          </template>
+          <template #default>
+            <img 
+              :src="i.imgPath" 
+              :alt="i.title" 
+              :title="i.title"
+              @click="handleToEssay(i._id)"
+              @load="handleImageLoad"
+            >
+          </template>
+        </el-skeleton>
+        
       </el-carousel-item>
     </el-carousel>
   </div>

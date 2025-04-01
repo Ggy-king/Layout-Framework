@@ -6,7 +6,6 @@ import TabMain from './TabMain.vue'
 import NavigatorCart from './NavigatorCart.vue'
 import CarouselView from './CarouselView.vue'
 
-
 </script>
 
 <template>

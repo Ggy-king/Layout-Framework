@@ -2,6 +2,7 @@
 
 <script setup lang="ts">
 
+import { ref } from 'vue';
 import { UrlStore, userFromStore } from '@/stores'
 import hooks  from '@/utils/hooks'
 
@@ -65,6 +66,12 @@ const handleCollectEssay = async (id:string) => {
   }
 }
 
+// 图片加载器
+const loading = ref<boolean>(true)
+const handleImageLoad = () => {
+    loading.value = false
+}
+
 
 const count = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 const load = () => {
@@ -78,7 +85,19 @@ const load = () => {
     <ul v-infinite-scroll="load" class="infinite-list" style="overflow: auto">
         <li v-for="i in props.essayList" :key="i.id" class="infinite-list-item">
             <div class="info-cart">
-              <img :src="i.imgPath" :alt="i.title" @click="handleToEssay(i._id)">
+              <el-skeleton 
+                  style="width: 200px; height: 130px;margin-right: 14px;"
+                  :loading="loading"
+                  animated
+                  :throttle="1000"
+              >
+                  <template #template>
+                      <el-skeleton-item variant="image" style="height: 100%" />
+                  </template>
+                  <template #default>
+                    <img :src="i.imgPath" :alt="i.title" @click="handleToEssay(i._id)" @load="handleImageLoad">
+                  </template>
+              </el-skeleton>
               <div class="info-cart-content">
                 <span class="title" @click="handleToEssay(i._id)">{{ i.title }}</span>
                 <span class="introduce ellipsis">{{ i. summarize}}</span>

@@ -7,7 +7,7 @@ import RelatedReading from './RelatedReading.vue'
 
 import noData from '@/assets/images/no-data.png'
 
-import { onMounted,ref } from 'vue'
+import { onMounted,ref,watch,computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { getEssayOne } from '@/api/essay'
@@ -16,8 +16,8 @@ import { getTopicEssay } from '@/api/topic'
 // ------------获取文章
 const route = useRoute()
 
+const essayId = computed(() => route.params.id)
 
-const essayId = route.params.id
 const essayList = ref<Record<string,any>>({})
 const essayShow = ref<boolean>(false)
 const handleToEssay = async (id:string) => {
@@ -29,8 +29,20 @@ const handleToEssay = async (id:string) => {
     essayList.value.currency = essayList.value.currency.join(" ")
     essayShow.value = true
 }
+
+watch(() => essayId.value,(newValue) => {
+    handleToEssay(newValue as string)
+})
+
+// 图片加载器
+const loading = ref<boolean>(true)
+const handleImageLoad = () => {
+    loading.value = false
+}
+
 onMounted(() => {
-    handleToEssay(essayId as string)
+    handleToEssay(essayId.value as string)
+
 })
 </script>
 
@@ -51,7 +63,19 @@ onMounted(() => {
         
         <main>
             <div class="essay-img">
-                <img :src="essayList.imgPath" :alt="essayList.title">
+                <el-skeleton 
+                    style="width: 100%; height: 480px"
+                    :loading="loading"
+                    animated
+                    :throttle="500"
+                >
+                    <template #template>
+                        <el-skeleton-item variant="image" style="height: 100%" />
+                    </template>
+                    <template #default>
+                        <img :src="essayList.imgPath" :alt="essayList.title" @load="handleImageLoad">
+                    </template>
+                </el-skeleton>
             </div>
             <div class="essay-write" v-html="essayList.writeHtml">
             </div>
@@ -61,7 +85,7 @@ onMounted(() => {
         <!-- 评论区 -->
         <MarkComment />
         <!-- 相关阅读 -->
-        <RelatedReading />
+        <RelatedReading :topic="essayList.topic"/>
 
          <!-- 侧边栏 -->
          <div class="side">

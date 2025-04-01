@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import hobbies1 from '@/assets/images/my/hobbies-1.jpg'
 import hobbies2 from '@/assets/images/my/hobbies-2.jpg'
 import hobbies3 from '@/assets/images/my/hobbies-3.jpg'
@@ -36,7 +37,6 @@ import hobbies6 from '@/assets/images/my/hobbies-6.jpg'
                             <div
                                 style="width: 300px; height: 700px;"
                             >
-                               
                                 <p
                                 style="font-size: 14px; color: var(--el-color-info);display: block;"
                                 >

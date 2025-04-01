@@ -14,9 +14,7 @@ defineOptions({
     <PersonalizedStatement />
 
     <!-- 文章展示 -->
-    <EssayShow />
-    
-    
+    <EssayShow /> 
     
 </template>
 

@@ -1,13 +1,46 @@
 <script setup lang="ts">
 import IconGithub from '@/components/icons/IconGithub.vue'
+import { ref,onMounted } from 'vue'
 
 import img from '@/assets/images/my/img.png'
+import { useRouter } from 'vue-router'
+import hooks from '@/utils/hooks'
 
+// 跳转
+const router = useRouter()
+const handleToHome = () => {
+    hooks.message('首页有下面四个图标便是我的联系方式哦，谢谢您的认可！','success')
+    router.push({name: 'total'})
+}
 
 // 跳转
 const handlePathTo = ( url:string ) :void => {
     window.open(url,'_blank')
 }
+
+
+// 图片相关
+const loading = ref<boolean>(true)
+const imageSources = [img]
+// 通用图片加载器
+const loadImage = (src:string) => new Promise((resolve, reject) => {
+  const img = new Image()
+  img.src = src
+  img.onload = () => resolve(src)
+})
+const imageIsShow = async () => {
+    try {
+        await Promise.all(imageSources.map(src => loadImage(src)))
+        loading.value = false
+    } catch (error) {
+        loading.value = true
+    }
+}
+
+onMounted(() => {
+    imageIsShow()
+})
+
 
 </script>
 
@@ -19,7 +52,7 @@ const handlePathTo = ( url:string ) :void => {
             <div class="info">寒窗苦读十余载，学得全栈方明白。如果您有开发各种网站、小程序、APP等需求，亦或者是跨平台、微服务、分离开发等需要。那希望我们可以深入交流，得到您的赏识将会是我最大前行的动力！
             </div>
             <div class="link">
-                <el-card shadow="hover">
+                <el-card shadow="hover" @click="handleToHome()">
                     <el-icon style="color: #fff;font-size: 30px;"><Avatar /></el-icon>
                     <span>
                         <div>联系我 Contact me</div>
@@ -35,8 +68,20 @@ const handlePathTo = ( url:string ) :void => {
                 </el-card>
             </div>
         </div>
-        <el-card class="about-image" >
-            <img :src="img" alt="我的学习记录及项目集成">
+        <el-card class="about-image">
+            <el-skeleton 
+                style="width: 100%; height: 480px"
+                :loading="loading"
+                animated
+                :throttle="500"
+            >
+                <template #template>
+                    <el-skeleton-item variant="image"  style="height: 100%" />
+                </template>
+                <template #default>
+                    <img :src="img" alt="我的学习记录及项目集成">
+                </template>
+            </el-skeleton>
         </el-card>
     </div>
 </template>
@@ -125,10 +170,6 @@ const handlePathTo = ( url:string ) :void => {
     height: 500px;
     :deep(.el-card__body) {
         padding: 10px;
-        img {
-        width: 100%;
-        height: 100%;
-    }
     }
   }
 
