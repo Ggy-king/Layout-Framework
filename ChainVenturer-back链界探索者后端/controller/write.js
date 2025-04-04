@@ -26,7 +26,6 @@ const postUploadImg = async (req,res,next) => {
 
 // 上传文章
 const postWriteInfo = (req,res,next) => {
-
     const { formObj,imgPath } = req.body
     WriteModel.create({...formObj,imgPath,author:req.user.username})
     .then(data => {

@@ -88,7 +88,6 @@ const getVariousEssay = async (req,res,next) => {
         if(req.query.technology) {
             const data = await WriteModel.find({technology: req.query.technology}).limit(12).exec()
             data.map(item => item.imgPath = serverOrigin + '/' + item.imgPath.replace(/\\/g, '/'))
-            
             return res.json({
                 code: '3000',
                 message: '文章获取成功',
@@ -98,7 +97,6 @@ const getVariousEssay = async (req,res,next) => {
         if(req.query.currency) {
             const data = await WriteModel.find({currency: req.query.currency}).limit(12).exec()
             data.map(item => item.imgPath = serverOrigin + '/' + item.imgPath.replace(/\\/g, '/'))
-            console.log(req.query.currency)
             return res.json({
                 code: '3000',
                 message: '文章获取成功',

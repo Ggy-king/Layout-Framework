@@ -8,7 +8,6 @@ const { serverOrigin } = require('../config/config')
 
 // 获取文章列表
 const getArticlesDate = (req,res,next) => {
-    
     const { page = 1, limit = 18 } = req.query
     WriteModel
     .find().sort({createdAt: -1})
@@ -73,6 +72,7 @@ const getArticlesHot = (req,res,next) => {
         })
     })
 }
+
 // 获取某用户的文章情况
 const getPersonArticle = (req,res,next) => {
     if(req.query.id) {
@@ -120,9 +120,34 @@ const getPersonArticle = (req,res,next) => {
     
 }
 
+// 根据相关领域返回文章
+const getAboutArticles = (req,res,next) => {
+    WriteModel.aggregate([
+        { $match: {topic: req.query.type} },
+        { $sample: { size: +req.query.size} },
+        { $project: { writeHtml: 0, comments: 0 } }
+    ]).exec()
+    .then(data => {
+        data.map(item => item.imgPath = serverOrigin + '/' + item.imgPath.replace(/\\/g, '/'))
+        res.json({
+            code: '3000',
+            message: '文章获取成功',
+            data
+        })
+    })
+    .catch(err => {
+        res.json({
+            code: '3002',
+            message: '文章获取失败',
+            err: null
+        })
+    })
+}
+
 module.exports = {
     getArticlesDate,
     getEssayData,
     getPersonArticle,
-    getArticlesHot
+    getArticlesHot,
+    getAboutArticles
 }
