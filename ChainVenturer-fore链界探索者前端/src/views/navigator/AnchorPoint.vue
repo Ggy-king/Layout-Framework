@@ -11,22 +11,22 @@
                 <li><el-icon><Medal /></el-icon></li>
             </el-anchor-link>
             <el-anchor-link  href="#two">
-                <li><el-icon><Medal /></el-icon></li>
+                <li><el-icon><DataAnalysis /></el-icon></li>
             </el-anchor-link>
             <el-anchor-link  href="#three">
-                <li><el-icon><Medal /></el-icon></li>
+                <li><el-icon><PictureRounded /></el-icon></li>
             </el-anchor-link>
             <el-anchor-link  href="#four">
-                <li><el-icon><Medal /></el-icon></li>
+                <li><el-icon><Menu ></Menu></el-icon></li>
             </el-anchor-link>
             <el-anchor-link  href="#five">
-                <li><el-icon><Medal /></el-icon></li>
+                <li><el-icon><PriceTag /></el-icon></li>
             </el-anchor-link>
             <el-anchor-link  href="#six">
-                <li><el-icon><Medal /></el-icon></li>
+                <li><el-icon><Coin /></el-icon></li>
             </el-anchor-link>
             <el-anchor-link  href="#seven">
-                <li><el-icon><Medal /></el-icon></li>
+                <li><el-icon><Help /></el-icon></li>
             </el-anchor-link>
         </el-anchor>
     </ul>

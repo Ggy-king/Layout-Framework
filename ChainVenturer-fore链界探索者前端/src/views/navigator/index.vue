@@ -54,7 +54,9 @@ onMounted(() => {
       firstKind="财务税务"
       secondKind="数据分析"
       thirdKind="AI服务"
-    />
+    >
+      <Medal />
+    </NavCart>
 
     <!-- 总览数据 -->
     <span id="two"></span>
@@ -65,7 +67,9 @@ onMounted(() => {
       firstKind="财经资讯"
       secondKind="股票投资"
       thirdKind="外汇相关"
-    />
+      >
+      <DataAnalysis />
+    </NavCart>
 
     <!-- 非同质化代币 -->
     <span id="three"></span>
@@ -76,9 +80,12 @@ onMounted(() => {
       firstKind="财经新闻"
       secondKind="金融知识"
       thirdKind="国际财经"
-    />
+      >
+      <PictureRounded />
+    </NavCart>
 
     <!-- 去中心化 -->
+    <span id="four"></span>
     <NavCart 
       title="DAO工具"
       :navList="navList" 
@@ -86,7 +93,9 @@ onMounted(() => {
       firstKind="投票"
       secondKind="社区"
       thirdKind="统计"
-    />
+      >
+      <Menu ></Menu>
+    </NavCart>
 
     <!-- 跨链桥 -->
     <span id="five"></span>
@@ -97,7 +106,9 @@ onMounted(() => {
       firstKind="分析"
       secondKind="工具"
       thirdKind="DEX"
-    />
+      >
+      <PriceTag />
+    </NavCart>
 
     <!-- 学习 -->
     <span id="six"></span>
@@ -108,7 +119,9 @@ onMounted(() => {
       firstKind="模型及平台"
       secondKind="辅助编程"
       thirdKind="资源工具"
-    />
+      >
+      <Coin />
+    </NavCart>
 
     <!-- 行情数据 -->
     <span id="seven"></span>
@@ -119,7 +132,9 @@ onMounted(() => {
       firstKind="编程助手与工具"
       secondKind="测试分析"
       thirdKind="引擎"
-    />
+      >
+      <Help />
+    </NavCart>
 
     <!-- 锚点链接 -->
     <AnchorPoint />

@@ -37,7 +37,12 @@ onMounted(() => {
 
 <template>
     <!-- 头部标题 -->
-    <header><el-icon><Medal /></el-icon>&nbsp;{{ props.title }}</header>
+    <header>
+        <el-icon color="#ae782c">
+            <slot></slot>
+        </el-icon>
+        <span>&nbsp;{{ props.title }}</span>
+    </header>
 
     <el-tabs
         type="card"
@@ -114,13 +119,14 @@ onMounted(() => {
 
 <style scoped lang="scss">
 header {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     color: #000;
     font-weight: 600;
     margin-bottom: 10px;
     .el-icon {
-        font-size: 20px;
-        vertical-align: middle;
+        font-size: 24px;
     }
     
 }
